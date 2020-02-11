@@ -1,0 +1,107 @@
+{%- assign collection = collections[settings.search_suggested_collection] | default: false -%}
+{%- assign page_1 = pages[settings.search_suggested_page_1] | default: false -%}
+{%- assign page_2 = pages[settings.search_suggested_page_2] | default: false -%}
+{%- assign blog = blogs[settings.search_suggested_blog] | default: false -%}
+{%- assign collection_heading = settings.search_suggested_collection_heading -%}
+{%- assign pages_heading = settings.search_suggested_pages_heading -%}
+{%- assign blog_heading = settings.search_suggested_blog_heading -%}
+{%- assign count = 0 -%}
+{%- if collection -%}
+	{%- assign count = count | plus: 1 -%}
+{%- endif -%}
+{%- if page_1 or page_2 -%}
+	{%- assign count = count | plus: 1 -%}
+{%- endif -%}
+{%- if blog -%}
+	{%- assign count = count | plus: 1 -%}
+{%- endif -%}
+
+{%- if collection or page_1 or page_2 or blog -%}
+	<div class="suggested-results suggested-results--{{ count }}">
+		{%- if collection -%}
+			<div class="suggested-result">
+				<h3 class="suggested-result__title">
+					{%- if collection_heading != blank -%}
+						{{- collection_heading -}}
+					{%- else -%}
+						{{- 'search.suggested.collection' | t -}}
+					{%- endif -%}
+				</h3>
+
+				{%- capture collection_content -%}
+					<div class="suggested-result__collection-content">
+						<h4 class="collection-title">{{ collection.title | truncatewords: 6 }}</h4>
+						{%- if collection.description != blank -%}
+							<p class="collection-description">{{ collection.description | strip_html | truncatewords: 10 }}</p>
+						{%- endif -%}
+						<span class="collection-link">{{ 'collections.listing_page.view_products' | t }}</span>
+					</div>
+				{%- endcapture -%}
+
+				{%- if collection.image -%}
+					{%- assign image = collection.image -%}
+					<a href="{{ collection.url }}" title="{{ collection.title }}" tabindex="0" 
+						class="suggested-result__collection-image lazyload fade-in"
+						data-bgset="{% include 'bgset', image %}"
+						data-sizes="auto"
+						data-parent-fit="cover">
+						<div class="image-overlay">
+							{{- collection_content -}}
+						</div>
+					</a>
+
+					<noscript>
+						<a href="{{ collection.url }}" title="{{ collection.title }}" class="suggested-result__collection-image" style="background-image: url( {{ image | img_url: '512x' }} );">
+							{{- collection_content -}}
+						</a>
+					</noscript>
+				{%- else -%}
+					<a href="{{ collection.url }}">{{- collection_content -}}</a>
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+
+		{%- if page_1 or page_2 -%}
+			<div class="suggested-result">
+				<h3 class="suggested-result__title">
+					{%- if pages_heading != blank -%}
+						{{- pages_heading -}}
+					{%- else -%}
+						{{- 'search.suggested.pages' | t -}}
+					{%- endif -%}
+				</h3>
+				{%- if page_1 -%}
+					<a href="{{ page_1.url }}" class="suggested-result__item" tabindex="0">
+						<h4>{{ page_1.title }}</h4>
+						<p>{{ page_1.content | strip_html | strip | truncatewords: 10 }}</p>
+					</a>
+				{%- endif -%}
+				
+				{%- if page_2 -%}
+					<a href="{{ page_1.url }}" class="suggested-result__item" tabindex="0">
+						<h4>{{ page_2.title }}</h4>
+						<p>{{ page_2.content | strip_html | strip | truncatewords: 10 }}</p>
+					</a>
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+
+		{%- if blog -%}
+			<div class="suggested-result">
+				<h3 class="suggested-result__title">
+					{%- if blog_heading != blank -%}
+						{{- blog_heading -}}
+					{%- else -%}
+						{{- 'search.suggested.blog_posts' | t -}}
+					{%- endif -%}
+				</h3>
+				{%- for article in blog.articles limit: 2 -%}
+					<a href="{{ article.url }}" class="suggested-result__item" tabindex="0">
+						<h4>{{ article.title }}</h4>
+						<p>{{ article.excerpt_or_content | strip_html | strip | truncatewords: 10 }}</p>
+					</a>
+				{%- endfor -%}
+			</div>
+		{%- endif -%}
+	</div>
+{%- endif -%}

@@ -1,0 +1,23 @@
+<div class="nav-search">    
+	<div class="nav-search-overlay">
+		<div class="nav-search-scroller">
+			<div class="nav-search-container container">
+				<form action="/search" method="get" class="search-form" role="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="250">
+					<div class="inputGroup">
+						<label for="search-field" class="accessible-label">{{ 'general.slide_out_navigation.search_label' | t }}</label>
+						<input tabindex= "3" class="nav-search-input" name="q" type="search" id="search-field" placeholder="{{ 'general.slide_out_navigation.search_placeholder' | t }}" value="{{ search.terms | escape }}" />
+						<input type="hidden" name="type" value="product" />
+						<button tabindex= "4" type="submit" class="nav-search-submit icon-arrow-right"></button>
+					</div>
+
+					<label for="search-field" class="icon-search">{% include 'icon-search' %}</label>
+					<a tabindex="{{ index }}" class="js-searchToggle searchToggle" aria-expanded="true"><i class="icon-close"></i></a>
+				</form>
+
+				{%- include 'search-suggested-results' -%}
+
+				<div id="search-results" class="results"></div>
+			</div>
+		</div>
+	</div>
+</div>

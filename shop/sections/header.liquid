@@ -1,0 +1,294 @@
+{% comment %} Settings Slide Out Navigation {% endcomment %}
+{%- assign menuPrimary = section.settings.menu_list -%}
+
+{%- if section.settings.show_announcement -%}
+{%- include 'announcement-bar' -%}
+{%- endif -%}
+
+{%- assign position = 'is-hamburger' -%}
+{%- if section.settings.nav_layout == 'standard' -%}
+{%- assign position = 'is-standard' -%}
+{%- endif -%}
+
+{%- assign logo_position = section.settings.logo_position -%}
+{%- assign links_position = section.settings.links_position -%}
+
+{%- assign logo_width = section.settings.logo_max_width | append: 'px' -%}
+
+{%- assign logo = section.settings.logo -%}
+{%- assign logo_other = section.settings.logo_other -%}
+{%- assign shop_name = shop.name | escape -%}
+{%- assign show_shop_name = section.settings.show_site_name -%}
+
+<style>
+  .main-logo__image,
+  .main-logo__image img { max-width: {{ logo_width }}; }
+</style>
+
+<header class="site-header header--no-bg {{ position }} header--{{ logo_position }}_{{ links_position }} header--{{ section.settings.nav_layout }} {% if section.settings.show_announcement %}has-announcement-bar{% endif %} {% if section.settings.show_announcement_on_mobile %}has-announcement-bar--mobile{% endif %} template-{{ template }} {% unless logo or logo_other or show_shop_name %}header--no-logo{% endunless %}" data-section-type="header" data-layout="{{ section.settings.nav_layout }}" id="header">
+	<div class="container">
+		<div class="row">
+			{%- if logo or logo_other or show_shop_name -%}
+				<h1 class="nav-item main-logo {% unless logo or logo_other %}main-logo--text-only{% endunless %}" itemscope itemtype="http://schema.org/Organization">
+					{%- if logo or logo_other -%}
+						<a href="/" class="main-logo__image visible-nav-link" data-width="{{ section.settings.logo_max_width }}">
+							{%- if template == 'index' or template == 'collection' -%}
+								{% comment %} Show home logo first if home page {% endcomment %}
+
+								{%- if logo -%}
+									<img src="{{ logo | img_url: '500x' }}" class="logo logo-home lazyload" data-aspectratio="{{ logo.aspect_ratio }}" alt="{{ logo.alt | escape }}">
+
+									{%- if logo_other -%}
+										<img src="{{ logo_other | img_url: '500x' }}" class="logo logo-other lazyload" data-aspectratio="{{ logo_other.aspect_ratio }}" alt="{{ logo_other.alt | escape }}">
+									{%- endif -%}
+
+								{%- elsif logo_other -%}
+									<img src="{{ logo_other | img_url: '500x' }}" class="logo lazyload" data-aspectratio="{{ logo_other.aspect_ratio }}" alt="{{ logo_other.alt | escape }}">
+								{%- endif -%}
+							
+							{%- else -%}
+								{% comment %} Show other logo first if other than home page {% endcomment %}
+
+								{%- if logo_other -%}
+									<img src="{{ logo_other | img_url: '500x' }}" class="logo lazyload" data-aspectratio="{{ logo_other.aspect_ratio }}" alt="{{ logo_other.alt | escape }}">
+								{%- elsif logo -%}
+									<img src="{{ logo | img_url: '500x' }}" class="logo lazyload" data-aspectratio="{{ logo.aspect_ratio }}" alt="{{ logo.alt | escape }}">
+								{%- endif -%}
+
+							{%- endif -%}
+						</a>
+					{%- endif -%}
+
+					{%- if show_shop_name -%}
+						<a id="shopName" class="main-logo__text" href="/" itemprop="url">{{ shop_name }}</a>
+					{%- endif -%}
+				</h1>
+			{%- endif -%}
+
+			<div class="header-fix-cont">
+				<div class="header-fix-cont-inner">
+					{%- if section.settings.nav_layout == 'standard' -%}
+						<nav role="navigation" class="nav-standard nav-main">
+							{%- assign is_hamburger_nav = false -%}
+							{%- include 'navigation' -%}
+
+							{%- if settings.show_search -%}
+								{%- include 'nav-search' -%}
+							{%- endif -%}
+						</nav>
+					{%- endif -%}
+
+					<div class="header-icons">
+						<a href="#menu" class="js-menuToggle menuToggle" data-target="nav" aria-expanded="false">
+							<div id="hamburger-menu" class="icon-menu">
+								<div class="diamond-bar"></div>
+								<div id="hamburger-bar" class="icon-bar"></div>
+							</div>
+						</a>
+
+						{%- if settings.show_multiple_currencies -%}
+							<span class="nav-item nav-item--currency-picker">
+								{%- include 'currency-picker' -%}
+							</span>
+						{%- endif -%}
+
+						{%- if shop.customer_accounts_enabled and section.settings.show_account_icon -%}
+						  <a href="/account" class="nav-item nav-item-fixed nav-account-link {% unless settings.show_search %}nav-account-link--no-search{% endunless %}">{% include 'icon-user' %}</a>
+						{%- endif -%}
+
+						<a href="#" class="nav-item js-searchToggle searchToggle" data-search-nav=".nav-standard" aria-expanded="false">
+						  {%- include 'icon-search' -%}
+						</a>
+
+						<a id="cartTotal" href="/cart" aria-label="{{ 'cart.labels.items_added' | t }}" class="js-cartToggle cartToggle nav-item-fixed nav-item diamond-outline" aria-expanded="false">
+							{%- include 'icon-cart' -%}
+							<div id="CartToggleItemCount" class="cartToggle-items">{{cart.item_count}}</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+{% comment %} Site Navigation {% endcomment %}
+<nav role="navigation" class="nav-hamburger nav-main style-default">
+  <div class="nav-inner">
+	<div class="nav-mobile-close js-menuToggle" aria-expanded="false">
+	  {%- include 'icon-menu-close' -%}
+	</div>
+	{%- assign is_hamburger_nav = true -%}
+	{%- include 'navigation' -%}
+  </div>
+</nav>
+
+{%- unless template == 'cart' -%}
+  <div class="cartContainer">
+	{%- include 'site-cart' -%}
+  </div>
+{%- endunless -%}
+
+{%- comment -%} Adds room to the top of the page under the fixed header. {%- endcomment -%}
+{%- unless template contains 'index' -%}
+	<div class="bodyWrap-spacer"></div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+	{
+	  "type": "image_picker",
+	  "id": "logo",
+	  "label": "Custom logo (Home page)",
+	  "info": "440px width recommended"
+	},
+	{
+	  "type": "image_picker",
+	  "id": "logo_other",
+	  "label": "Custom logo (All other pages)",
+	  "info": "440px width recommended"
+	},
+	{
+	  "type": "range",
+	  "id": "logo_max_width",
+	  "label": "Custom logo width (in pixels)",
+	  "info": "Max logo height is 100px",
+	  "min": 50,
+	  "max": 400,
+	  "default": 100,
+	  "step": 5,
+	  "unit": "px"
+	},
+	{
+	  "type": "checkbox",
+	  "id": "show_site_name",
+	  "label": "Show site name",
+	  "default": true
+	},
+	{
+	  "type": "checkbox",
+	  "id": "show_account_icon",
+	  "label": "Show account icon",
+	  "default": true
+	},
+	{
+	  "type": "header",
+	  "content": "Menus"
+	},
+	{
+	  "type": "link_list",
+	  "id": "menu_list",
+	  "label": "Primary menu"
+	},
+	{
+	  "type":"header",
+	  "content":"Navigation settings"
+	},
+	{
+	  "type": "select",
+	  "id": "nav_layout",
+	  "label": "Navigation layout",
+	  "default": "standard",
+	  "options": [
+		{
+		  "value": "hamburger",
+		  "label": "Hamburger"
+		},
+		{
+		  "value": "standard",
+		  "label": "Standard"
+		}
+	  ]
+	},
+	{
+	  "type":"header",
+	  "content":"Standard navigation",
+	  "info":"These options are only applicable if you have enabled Standard navigation above"
+	},
+	{
+	  "type": "select",
+	  "id": "links_position",
+	  "label": "Links position",
+	  "default": "links_right",
+	  "options": [
+		{
+		  "value": "links_left",
+		  "label": "Left"
+		},
+		{
+		  "value": "links_right",
+		  "label": "Right"
+		},
+		{
+		  "value": "links_center",
+		  "label": "Center"
+		}
+	  ]
+	},
+	{
+	  "type": "select",
+	  "id": "logo_position",
+	  "label": "Logo position",
+	  "default": "logo_left",
+	  "options": [
+		{
+		  "value": "logo_left",
+		  "label": "Left"
+		},
+		{
+		  "value": "logo_center",
+		  "label": "Center"
+		}
+	  ]
+	},
+	{
+	  "type":"header",
+	  "content":"Mega menu"
+	},
+	{
+	  "type": "image_picker",
+	  "id": "meganav_image",
+	  "label": "Image",
+	  "info": "Recommended size: 500 x 800 px"
+	},
+	{
+	  "type": "text",
+	  "id": "meganav_image_heading",
+	  "label": "Heading"
+	},
+	{
+	  "type": "url",
+	  "id": "meganav_image_link",
+	  "label": "Link"
+	},
+	{
+	  "type":"header",
+	  "content":"Announcement bar"
+	},
+	{
+	  "type":"checkbox",
+	  "id":"show_announcement",
+	  "label":"Show announcement",
+	  "default": true
+	},
+	{
+	  "type":"checkbox",
+	  "id":"show_announcement_on_mobile",
+	  "label":"Show on mobile",
+	  "default": true
+	},
+	{
+	  "type": "richtext",
+	  "id": "text",
+	  "label": "Text",
+	  "default":"<p>Broadcast sales, promos, or other offerings here</p>"
+	},
+	{
+	  "type": "url",
+	  "id": "link",
+	  "label": "Link"
+	}
+  ]
+}
+{% endschema %}

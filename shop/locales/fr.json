@@ -1,0 +1,292 @@
+{
+  "general": {
+    "404": {
+      "title": "Page non trouvée",
+      "continue_shopping": "Continuer mes achats",
+      "subtext_html": "La page demandée n'existe pas. Cliquez ci-dessous pour continuer vos achats."
+    },
+    "header": {
+      "cart_label": "Panier"
+    },
+    "footer": {
+      "newsletter": {
+        "label": "Entrez votre email",
+        "submit_button": "Souscrire",
+        "submit_success": "Merci d'avoir souscrit."
+      },
+      "shopify": "Shopify",
+      "copyright_html": "",
+      "twitter": ""
+    },
+    "slide_out_navigation": {
+      "search_label": "Rechercher",
+      "search_placeholder": "Recherche..."
+    },
+    "newsletter_signup": {
+      "email_placeholder": "Adresse email",
+      "success_message": "Merci d'avoir souscrit ! "
+    },
+    "reviews": {
+      "title": "Avis"
+    }
+  },
+  "collections": {
+    "listing_page": {
+      "view_products": "Voir les produits",
+      "title": "Collections"
+    },
+    "breadcrumbs": {
+      "default_collection": "Tous les produits",
+      "products": "Produits",
+      "home": "Home",
+      "collections": "Collections"
+    },
+    "tag_filtering": {
+      "default_filter": "Tout ",
+      "filter_label": "Filtrer par tag : "
+    },
+    "sorting_dropdown": {
+      "label": "Trier par : ",
+      "all": "Tout",
+      "best_selling": "Meilleures ventes",
+      "price_ascending": "Prix : - cher au + cher",
+      "price_descending": "Prix : + cher au - cher",
+      "created_ascending": "Ancien au récent",
+      "created_descending": "Récent à ancien"
+    },
+    "pagination": {
+      "load_more": "Charger plus"
+    },
+    "errors": {
+      "continue_shopping": "Continuer mes achats",
+      "no_products": "Oh non ! Il n'y a aucun produits dans cette collection."
+    },
+    "grid": {
+      "quick_view": "Vue rapide",
+      "shop_all": "Shop",
+      "no_images": "Oh non ! Aucun des produits de la collection ne possède d'images.",
+      "no_products": "Oh non ! Il n'y a aucun produits dans cette collection."
+    }
+  },
+  "products": {
+    "labels": {
+      "sold_out": "Épuisé",
+      "unavailable": "Indisponible",
+      "view_all": "Tout voir"
+    },
+    "shop_bar": {
+      "buy_label": "Acheter"
+    },
+    "form": {
+      "qty": "Quantité",
+      "quantity": "Quantité",
+      "submit": "Ajouter au panier",
+      "sold_out": "Vendu",
+      "success": "Ajouté ",
+      "submit_error": "Oops"
+    },
+    "product_page": {
+      "product_details": "À propos",
+      "similar_products": "Vous aimerez aussi...",
+      "similar_products_cta": "Tout voir"
+    }
+  },
+  "blog": {
+    "blog_list_view": {
+      "view_article": "Lire plus",
+      "tags_label": "Tags",
+      "back_to": "Revenir à",
+      "newer_articles": "Articles récents",
+      "older_articles": "Anciens articles",
+      "follow": "Suivre"
+    },
+    "article": {
+      "social_share": "Partager : ",
+      "comment_post_title": "Laisser un commentaire",
+      "comment_author": "Nom",
+      "comment_author_placeholder": "Votre nom",
+      "comment_post_button_title": "Poster un commentaire",
+      "next_post": "Article suivant",
+      "previous_post": "Article précédent",
+      "onboarding": {
+        "author": "Nom de l'auteur",
+        "title": "Titre de l'article blog",
+        "tags": "Tag"
+      }
+    }
+  },
+  "cart": {
+    "labels": {
+      "cart_title": "Panier",
+      "product": "Produit",
+      "price": "Prix",
+      "quantity": "Quantité",
+      "cart": "Panier"
+    }
+  },
+  "contact": {
+    "form": {
+      "submit_button": "Soumettre",
+      "submit_success": "Merci de nous avoir contacté ! "
+    }
+  },
+  "search": {
+    "content": {
+      "title": "Recherche",
+      "results": {
+        "products": "Produits",
+        "one": "Résultat",
+        "other": "Résultats",
+        "no_results": "Aucun résultat trouvé"
+      },
+      "placeholder": "Entrez une recherche pour commencer",
+      "popular": "Recherches populaires"
+    },
+    "button": {
+      "text": "Rechercher"
+    },
+    "suggested": {
+      "blog_posts": "Articles blogs"
+    }
+  },
+  "customer": {
+    "link": {
+      "my_account": "Mon compte",
+      "login": "Se connecter",
+      "sign_up": "S'inscrire",
+      "logout": "Se déconnecter"
+    },
+    "login": {
+      "title": "Se connecter",
+      "password": "Mot de passe",
+      "sign_in": "Se connecter",
+      "cancel": "Retourner à la boutique",
+      "guest_continue": "Continuer en tant qu'invité",
+      "forgot_password": "Récupérer le mot de passe"
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmer le mot de passe",
+      "submit": "Réinitialiser le mot de passe",
+      "subtext": "Entez un nouveau mot de passe s'il vous plaît"
+    },
+    "recover_password": {
+      "title": "Récupérer le mot de passe",
+      "submit": "Réinitialiser le mot de passe",
+      "cancel": "Annuler",
+      "subtext": "S'il vous plaît, entrez votre email et nous vous enverrons un lien pour réinitialiser votre mot de passe."
+    },
+    "register": {
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "title": "Enregistrer votre compte",
+      "password": "Mot de passe",
+      "submit": "Soumettre",
+      "cancel": "Annuler"
+    },
+    "account": {
+      "title": "Compte",
+      "details": "Détails du compte",
+      "view_addresses": "Adresses"
+    },
+    "orders": {
+      "title": "Vos commandes",
+      "none": "Pas de commandes récentes",
+      "order_number": "Numéro de la commande",
+      "payment_status": "Paiement",
+      "fulfillment_status": "Statut de la commande"
+    },
+    "order": {
+      "title": "Commande",
+      "date": "Date : ",
+      "product": "Produit",
+      "price": "Prix",
+      "quantity": "Quantité",
+      "subtotal": "Sous-total",
+      "shipping": "Livraison",
+      "billing_address": "Adresse de facturation",
+      "shipping_address": "Adresse de livraison",
+      "payment_status": "Statut du paiement",
+      "fulfillment_status": "Statut de la livraison",
+      "fulfilled_at": "Rempli",
+      "tax": "Taxe",
+      "summary": "Récapitulatif",
+      "cancelled": "Annulé",
+      "cancelled_reason": "Raison de l'annulation",
+      "discount": "Réduction"
+    },
+    "addresses": {
+      "title": "Adresses sauvegardées",
+      "add_new": "Ajouter une nouvelle adresse",
+      "edit": "Éditer",
+      "delete": "Supprimer",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "company": "Entreprise",
+      "address1": "Adresse",
+      "address2": "App, suite, etc",
+      "city": "Ville",
+      "country": "Pays",
+      "province": "État",
+      "zip": "Code postal",
+      "phone": "Téléphone",
+      "set_default": "Défini comme adresse par défault",
+      "add": "Ajouter une adresse",
+      "cancel": "Annuler",
+      "update": "Mettre à jour",
+      "edit_address": "Éditer l'adresse",
+      "not_blank": "* ne peut être vide"
+    },
+    "activate_account": {
+      "title": "Activer le compte",
+      "subtext": "Vous avez été invité à créer un compte.",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmer le mot de passe",
+      "submit": "Soumettre",
+      "cancel": "Annuler"
+    }
+  },
+  "password": {
+    "forms": {
+      "email_placeholder": "Votre email",
+      "email_signup_submit_button": "Soumettre",
+      "enter_password_title": "Entrez en utilisant un mot de passe",
+      "enter_password_placeholder": "Votre mot de passe",
+      "call_to_action": "Entrer",
+      "success": "Merci d'avoir souscrit ! "
+    }
+  },
+  "instagram": {
+    "follow": "Suivre",
+    "link_label": "Post Instagram",
+    "likes": "",
+    "months": "Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre",
+    "view_on_instagram": "Voir sur Instagram"
+  },
+  "onboarding": {
+    "title": "Titre",
+    "content": "Contenu",
+    "product_title": "Titre du produita",
+    "collection_description": "Une description pour la collection",
+    "colors": {
+      "label": "Couleur",
+      "white": "Blanc",
+      "grey": "Gris",
+      "black": "Noir"
+    },
+    "sizes": {
+      "label": "Taille",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "collection": "Collection",
+    "faq_question": "Question"
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": " "
+    }
+  }
+}

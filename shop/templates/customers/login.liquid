@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row inline u-center">
+    {% comment %}
+      If a user has successfully requested a new password, the form.posted_successfully? variable
+      is set to true within the 'recover_customer_password' form only. Within that form you'll see
+      the variable 'resetPassword' set to true, which is used to initialize timber.resetPasswordSuccess().
+    {% endcomment %}
+    <div class="block s1 med_s13" id="ResetSuccess" style="display:none;">
+      {{- 'customer.recover_password.success' | t -}}
+    </div>
+  </div>
+
+  <div class="row inline u-center">
+
+    <div class="js-loginForm account-form account-form block s1 med_s12" id="login-form" style="display:none">
+      {%- form 'customer_login' -%}
+        <div class="row inline">
+
+          <p class="block s1 pad-xs size--heading-1">{{ 'customer.login.title' | t }}</p>
+
+          <div class="block s1 p c-accent">
+            {{- form.errors | default_errors -}}
+          </div>
+
+          <div class="inputGroup block s1 med_s12">
+            <label for="CustomerEmail" class="c-gray">{{ 'customer.login.email' | t }}</label>
+            <input type="email" name="customer[email]" class="{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus required>
+          </div>
+
+          {% if form.password_needed %}
+            <div class="inputGroup block s1 med_s12">
+              <label for="CustomerPassword" class="c-gray">{{ 'customer.login.password' | t }}</label>
+              <input type="password" name="customer[password]" id="CustomerPassword" class="{% if form.errors contains 'password' %} error{% endif %}" required>
+            </div>
+          {% endif %}
+
+        </div> <!-- END form .row -->
+        <div class="row inline">
+
+          <input type="submit" class="account-form-submit button" value="{{ 'customer.login.sign_in' | t }}">
+          {% form 'guest_login' %}
+            <input type="submit" class="guest-login-submit button button--light" value="{{ 'customer.login.guest_continue' | t }}">
+          {% endform %}
+
+          <div class="account-form-links block s1 row inline">
+            {% if shop.customer_accounts_enabled %}
+              <a href="./register">{{ 'customer.link.sign_up' | t }}</a>
+            {% endif %}
+            {% if form.password_needed %}
+              <a href="#recover-form" class="js-recoverToggle">{{ 'customer.login.forgot_password' | t }}</a>
+            {% endif %}
+          </div>
+
+        </div> <!-- END form .row -->
+      {%- endform -%}
+    </div>
+
+    <div class="js-recoverForm recoverForm account-form block s1 med_s12" id="recover-form" style="display:none">
+      <div class="row inline">
+
+        <p class="block s1 size--heading-1">{{ 'customer.recover_password.title' | t }}</p>
+        <p class="block s1">{{ 'customer.recover_password.subtext' | t }}</p>
+
+        <div class="block s1 med_s12">
+          {%- form 'recover_customer_password' -%}
+            <div class="row inline">
+
+              {{ form.errors | default_errors }}
+
+              {%- if form.posted_successfully? -%}
+                {%- assign resetPassword = true -%}
+              {%- endif -%}
+
+              <div class="inputGroup">
+                <label for="RecoverEmail" class="c-gray">{{ 'customer.recover_password.email' | t }}</label>
+                <input type="email" name="email" id="RecoverEmail" autocorrect="off" autocapitalize="off" required>
+              </div>
+            </div>
+            <div class="row inline">
+              <input type="submit" class="account-form-submit button block" value="{{ 'customer.recover_password.submit' | t }}">
+
+              <div class="account-form-links block s1 row inline">
+                <a href="#login-form" class="js-recoverCancel">{{ 'customer.recover_password.cancel' | t }}</a>
+              </div>
+            </div>
+
+          {%- endform -%}
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

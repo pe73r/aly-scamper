@@ -1,0 +1,52 @@
+<form class="productForm pseudoform" action="/cart/add" method="post">
+	<div class="productForm-block productForm-block--options-inline {% if color_swatches %}productForm-block--swatches{% endif %}">
+		{%- if color_swatches -%}
+			<div class="swatch clearfix">
+				<div class="header">{{ 'onboarding.colors.label' | t }}</div>
+				<div data-value="White" class="swatch-element color white available">
+					<label>
+						<input type="radio" name="product_id-{{ section.id }}" value="{{ 'onboarding.colors.white' | t }}" title="{{ 'onboarding.colors.white' | t }}" checked>
+						<span style="background-color: white;"></span>
+					</label>
+				</div>
+
+				<div data-value="Grey" class="swatch-element color grey available">
+					<label>
+						<input type="radio" name="product_id-{{ section.id }}" value="{{ 'onboarding.colors.grey' | t }}" title="{{ 'onboarding.colors.grey' | t }}">
+						<span style="background-color: grey;"></span>
+					</label>
+				</div>
+
+				<div data-value="Black" class="swatch-element color black available">
+					<label>
+						<input type="radio" name="product_id-{{ section.id }}" value="{{ 'onboarding.colors.black' | t }}" title="{{ 'onboarding.colors.black' | t }}">
+						<span style="background-color: black;"></span>
+					</label>
+				</div>
+			</div>
+	    {%- endif -%}
+
+	    <div class="selector-wrapper">
+    		<span class="selectArrow"></span>
+    		<label>{{ 'onboarding.sizes.label' | t }}</label>
+    		<select>
+    			<option value="{{ 'onboarding.sizes.small' | t }}">{{ 'onboarding.sizes.small' | t }}</option>
+    			<option value="{{ 'onboarding.sizes.medium' | t }}">{{ 'onboarding.sizes.medium' | t }}</option>
+    			<option value="{{ 'onboarding.sizes.large' | t }}">{{ 'onboarding.sizes.large' | t }}</option>
+    		</select>
+    	</div>
+	</div>
+	<div class="productForm-block">
+		{%- if section.settings.show_quantity -%}
+			<div class="qty__adjust">
+				<input type="number" name="quantity" id="quantity" value="1" min="1">
+				<span class="qty__adjust-btn js-qty__adjust-btn decrease">-</span>
+				<span class="qty__adjust-btn js-qty__adjust-btn increase">+</span>
+			</div>
+		{%- endif -%}
+
+		<div>
+			<button class="productForm-submit js-productForm-submit add-to-cart-btn-style" type="submit" data-handle="{{product.handle}}" data-parent-id="{{section.id}}">{{ 'products.form.submit' | t }}</button>
+		</div>
+	</div>
+</form>

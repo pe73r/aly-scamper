@@ -1,0 +1,76 @@
+<div class="icons-row__item">
+	{%- if image != blank -%}
+		<div class="icons-row__image">
+			{%- assign image_widths = '295,394,590,700' -%}
+			{%- include 'theme-rias' -%}
+			<img 
+				 class="lazyload fade-in"
+				 data-src="{{ image_url_pattern }}"
+				 data-widths= "[{{ image_widths }}]"
+				 data-aspectratio="{{image.aspect_ratio }}"
+				 data-sizes="auto"
+				 alt="{{ image.alt | escape }}">
+			<noscript>
+				<img src="{{ image | img_url: '512x' }}" alt="{{ image.alt | escape }}">
+			</noscript>
+		</div>
+	{%- elsif icon != blank -%}
+		{%- case icon -%}
+			{%- when 'award' -%}
+				{%- include 'icon-award' -%}
+			{%- when 'basket' -%}
+				{%- include 'icon-basket' -%}
+			{%- when 'ball' -%}
+				{%- include 'icon-ball' -%}
+			{%- when 'calendar' -%}
+				{%- include 'icon-calendar' -%}
+			{%- when 'camera' -%}
+				{%- include 'icon-camera' -%}
+			{%- when 'comment' -%}
+				{%- include 'icon-comment' -%}
+			{%- when 'data' -%}
+				{%- include 'icon-data' -%}
+			{%- when 'dollar' -%}
+				{%- include 'icon-dollar' -%}
+			{%- when 'email' -%}
+				{%- include 'icon-email' -%}
+			{%- when 'eye' -%}
+				{%- include 'icon-eye' -%}
+			{%- when 'fruits' -%}
+				{%- include 'icon-fruits' -%}
+			{%- when 'house' -%}
+				{%- include 'icon-house' -%}
+			{%- when 'lock' -%}
+				{%- include 'icon-lock' -%}
+			{%- when 'money' -%}
+				{%- include 'icon-money' -%}
+			{%- when 'phone' -%}
+				{%- include 'icon-phone' -%}
+			{%- when 'reload' -%}
+				{%- include 'icon-reload' -%}
+			{%- when 'shop' -%}
+				{%- include 'icon-shop' -%}
+			{%- when 'sync' -%}
+				{%- include 'icon-sync' -%}
+			{%- when 'target' -%}
+				{%- include 'icon-target' -%}
+			{%- when 'wallet' -%}
+				{%- include 'icon-wallet' -%}
+
+		{%- endcase -%}
+	{%- else -%}
+		<div class="icons-row__image">
+			<div class="icon-svg-placeholder">
+				{{- 'image' | placeholder_svg_tag: 'placeholder-svg-filled' -}}
+			</div>
+		</div>
+	{%- endif -%}
+
+	{%- if title != blank -%}
+		<h3 class="icons-row__title">{{ title }}</h3>
+	{%- endif -%}
+
+	{%- if content != blank -%}
+		<p class="icons-row__content">{{ content }}</p>
+	{%- endif -%}
+</div>
