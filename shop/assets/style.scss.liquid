@@ -168,7 +168,7 @@ $general_font: {{ general_font.family }}, {{ general_font.fallback_families }};
 $general_font: 'More W01 Wide Light', {{ general_font.fallback_families }};
 
 $header_font: {{ header_font.family }}, {{ header_font.fallback_families }};
-$header_font: 'More W01 Wide Book', {{ header_font.fallback_families }}; 
+$header_font: 'More W01 Wide Book', {{ header_font.fallback_families }};
 
 
 $general_font_weight: {{ general_font.weight | default: 400 }};
@@ -16178,4 +16178,100 @@ body.allow-animations {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+
+/* #Custom Styles
+================================================== */
+
+/*==== Anchor menu ==============*/
+
+.Anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+
+  @supports (--css: variables) {
+    top: calc(-1 * (var(--header-height))); /* + var(--announcement-bar-height)));*/
+  }
+}
+
+.anchor-menu{
+	background-color : transparent;
+	width: 100%;
+}
+
+.anchor-menu_container{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+	max-width: 850px;
+}
+
+.anchor-link{
+	padding: 14px 14px;
+	cursor : pointer;
+}
+.anchor-link:hover{
+	transition : 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+	.anchor-link{
+		padding: 8px 14px;
+	}
+	.anchor-menu_container{
+		flex-wrap: wrap;
+	}
+}
+
+
+/* ========= Sticky styles ====*/
+
+.sticky {
+  transition: ease .2s;
+}
+
+.sticky-pin {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.sticky-2 {
+  position:fixed;
+  top:0;
+  z-index: 3;
+}
+
+.position-sticky{
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 3;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+	.space-top{
+		top: 0 !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	.position-sticky{
+		position: sticky;
+		top: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.anchor-menu_container{
+		flex-direction: column;
+		text-align: center;
+		a { 
+			padding: 15px 0;
+		}
+	}
 }

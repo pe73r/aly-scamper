@@ -3,10 +3,19 @@
 {% comment %} Schema {% endcomment %}
 {% schema %}
 {
-	"name": "Slideshow",
+	"name": "Slideshow boutique", 
 	"max_blocks": 6,
 	"class": "section-slideshow header--full",
 	"settings": [
+			{
+				"type": "header",
+				"content": "Anchor"
+			},
+			{
+				"type": "text",
+				"id": "anchor",
+				"label": "Ancre de la section"
+		 },
 		{
 			"type": "header",
 			"content": "Layout"
@@ -323,7 +332,7 @@
 	{
 		"name": "Slideshow",
 		"category": "Image",
-		"blocks": 
+		"blocks":
 			[
 				{
 					"type": "image"

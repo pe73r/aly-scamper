@@ -21,15 +21,19 @@
 {%- comment -%} Layout {%- endcomment -%}
 {%- assign alignment = section.settings.alignment -%}
 {%- assign contentWidth = section.settings.content_width -%}
-			 
+
 {%- comment %} Section {% endcomment %}
+{% if section.settings.anchor != blank %}
+	<span class="anchor" id="{{ section.settings.anchor }}"></span>
+{% endif %}
 <section id="hero--{{ section.id }}" class="container-wrap hero hero-slider js-hero-slider hero--text-animation {% if transition == 'zoom-out' %}hero--zoom-out{% endif %} hero--is-loading hero--dots-{{ dots_position }} {{ section.settings.slide_height }}" id="slideshow-module-{{ section.id }}" data-section-type="slideshow" data-slick="{ 'arrows':{{ showNavArrows }}, 'dots':{{ showNavDots }}, 'autoplay':{{ autoplay }}, 'dotsClass':'slick-dots hero-dots-row row', 'autoplaySpeed':{{duration}}, 'speed':{{ speed }}, 'adaptiveHeight':{{ original_height }}, 'pauseOnHover':{{ hover }}, 'fade':{{ fadeMode }}, 'infinite':true }" data-image-height="{{ section.settings.slide_height }}">
+
 	{%- for block in section.blocks -%}
 
 		{%- comment -%} Layout {%- endcomment -%}
 		{%- assign alignment = block.settings.alignment -%}
 		{%- assign contentWidth = block.settings.content_width -%}
-		
+
 		{%- comment -%} Colors {%- endcomment -%}
 		{%- unless block.settings.overlay_color == blank -%}
 			{%- assign overlayColor = block.settings.overlay_color  -%}
@@ -37,7 +41,7 @@
 			{%- assign overlayColor = 'none' -%}
 		{%- endunless -%}
 		{%- assign overlayOpacity = block.settings.overlay_opacity | prepend: '.' -%}
-		
+
 		{%- assign color_style = block.settings.color_style -%}
 
 		{%- assign buttonPrimaryStyle = block.settings.cta_primary_btn_style -%}
@@ -114,7 +118,7 @@
 								{%- assign image = block.settings.image -%}
 								{%- assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' -%}
 								{% include 'theme-rias' %}
-								<img 
+								<img
 									class="{% if forloop.index == 1 %}lazyload {% endif %}fade-in"
 									data-src="{{ image_url_pattern }}"
 									data-widths= "[{{ image_widths }}]"
@@ -133,13 +137,13 @@
 								</div>
 							</div>
 						{%- endif -%}
-							
+
 						{%- if image_mobile != blank -%}
 							<div class="slide-image slide-image--mobile">
 								{%- assign image = block.settings.image_mobile -%}
 								{%- assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' -%}
 								{% include 'theme-rias' %}
-								<img 
+								<img
 									class="{% if forloop.index == 1 %}lazyload {% endif %}fade-in"
 									data-src="{{ image_url_pattern }}"
 									data-widths= "[{{ image_widths }}]"
@@ -174,7 +178,7 @@
 								</div>
 							</div>
 						{%- endif -%}
-						
+
 						{%- if image_mobile != blank -%}
 							{%- assign image = block.settings.image_mobile -%}
 							<div class="slide-background slide-background--mobile slide-background--{{ block.settings.image_position }} {% if forloop.index == 1 %}lazyload {% endif %}fade-in"

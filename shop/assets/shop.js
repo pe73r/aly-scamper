@@ -1461,7 +1461,7 @@ jQuery( function ($) {
 					$(this).parent().toggleClass('is-expanded');
 				});
 			}
-			
+
 		},
 
 		/**
@@ -4408,7 +4408,7 @@ jQuery( function ($) {
 	Popup.init();
 	Search.init();
 
-	
+
 
 	if ( $('.template-product').length ) {
 		Product.init();
@@ -6073,7 +6073,7 @@ var Popup = {
 	hide: function() {
 		clearTimeout( this.popupTimeout );
 		if ( $.modal != undefined ) {
-			$.modal.close();	
+			$.modal.close();
 		}
 	},
 	createCookie: function(reappearTime){
@@ -6318,7 +6318,7 @@ var Addresses = {
 	    });
 
 	    // Setup province selector on each customer address
-	    
+
 
 	    // Modified contents of customer_area.js (global asset)
 	    Shopify.CustomerAddress = {
