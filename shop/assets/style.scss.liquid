@@ -8703,7 +8703,7 @@ html.overflow--hidden {
 	padding-top: 160px;
 
 	@media screen and (max-width: $xl){
-			padding-top: 140px;
+			padding-top: 120px;
 	}
 	@media screen and (max-width: ($med - 1)){
 			padding-top: 120px;
@@ -16227,23 +16227,8 @@ body.allow-animations {
 }
 
 
-/* ========= Sticky styles ====*/
+/* ========= Anchor menu sticky  ====*/
 
-.sticky {
-  transition: ease .2s;
-}
-
-.sticky-pin {
-  position: fixed;
-  top: 0;
-  z-index: 3;
-}
-
-.sticky-2 {
-  position:fixed;
-  top:0;
-  z-index: 3;
-}
 
 .position-sticky{
 	position: fixed;
@@ -16254,15 +16239,9 @@ body.allow-animations {
 
 
 @media screen and (max-width: 1023px) {
-
-	.space-top{
-		top: 0 !important;
-	}
-}
-@media screen and (max-width: 768px) {
 	.position-sticky{
 		position: sticky;
-		top: 100px;
+		top: 0;
 	}
 }
 
@@ -16270,7 +16249,7 @@ body.allow-animations {
 	.anchor-menu_container{
 		flex-direction: column;
 		text-align: center;
-		a { 
+		a {
 			padding: 15px 0;
 		}
 	}
