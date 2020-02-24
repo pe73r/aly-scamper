@@ -4,9 +4,10 @@
       {%- if image != blank -%}
         {%- assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' -%}
         {%- include 'theme-rias' -%}
-        <img 
+        <img
            class="lazyload"
-           data-src="{{ image_url_pattern }}"
+           src="{{ image | img_url: '1x' }}"
+           data-src="{{ image_url_pattern }}" 
            data-widths= "[{{ image_widths }}]"
            data-aspectratio="{{image.aspect_ratio }}"
            data-sizes="auto"

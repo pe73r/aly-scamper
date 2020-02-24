@@ -6399,21 +6399,21 @@ MobileZoom = {
 
 /// Anchor menu ///
 
-//  var scrollTo = function(anchor){
-// 	console.log('new anchor');
-// 	if(!$(anchor) || !$(anchor).offset()) return;
-// 	$('html, body').stop().animate({
-// 		 scrollTop: $(anchor).offset().top - 120
-// 	 }, 1000);
-// }
-//
-// $('.scroll-to').each(function(){
-//    $(this).click(function(){
-// 	   var anchor = $(this).attr('data-anchor');
-// 	   scrollTo(anchor);
-//    })
-// })
- 
+ var scrollTo = function(anchor){
+	console.log('new anchor');
+	if(!$(anchor) || !$(anchor).offset()) return;
+	$('html, body').stop().animate({
+		 scrollTop: $(anchor).offset().top - $('#shopify-section-header').height()
+	 }, 1000);
+}
+
+$('.scroll-to').each(function(){
+   $(this).click(function(){
+	   var anchor = $(this).attr('data-anchor');
+	   scrollTo(anchor);
+   })
+})
+
 
 
 /// smooth scroll ///
