@@ -3101,7 +3101,7 @@ jQuery( function ($) {
 					var placeholder = false;
 
 					if(src == '') {
-						src = '//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/placeholder-pattern.png?912';
+						src = '//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/placeholder-pattern.png?v=18306360016701120725';
 						placeholder = true;
 					}
 
@@ -3127,7 +3127,7 @@ jQuery( function ($) {
 					});
 
 					$(im).on('error', function() {
-						$el.css('background-image', 'url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/placeholder-pattern.png?912)')
+						$el.css('background-image', 'url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/placeholder-pattern.png?v=18306360016701120725)')
 							.removeClass('bg-loading').addClass('bg-placeholder bg-loaded').find('.spinner').fadeOut(300, function() {
 								$(this).remove();
 							});

@@ -13,14 +13,14 @@
         class="collectionBlock-image {% if settings.transition_collections_list %}collectionBlock-image--zoom{% endif %} no-js-image" style="background-image:url('{{ image | img_url: '1024x' }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
         </a>
       </noscript>
-      
+
     {% else %}
       <div class="collectionBlock-image {% if settings.transition_collections_list %}collectionBlock-image--zoom{% endif %} svg-placeholder">
         {% capture current %}{% cycle 'current': 1, 2, 3, 4, 5 %}{% endcapture %}
         {{ 'collection-' | append: current | placeholder_svg_tag }}
       </div>
     {% endunless %}
-      
+
     <div class="collectionBlock-info text-position--{{ section.settings.coll_text_position }}">
       <div>
         <h2 class="size--{{ coll_text_size }}">{{ 'onboarding.collection' | t }}</h2>

@@ -22,10 +22,15 @@
 {%- assign alignment = section.settings.alignment -%}
 {%- assign contentWidth = section.settings.content_width -%}
 
-{%- comment %} Section {% endcomment %}
+{%- comment %} Anchor {% endcomment %}
 {% if section.settings.anchor != blank %}
-	<span class="anchor" id="{{ section.settings.anchor }}"></span>
+	<span class="anchor" id="{{ section.settings.anchor }}"></span> 
 {% endif %}
+
+<!-- ​​​​​​​<a class="anchor" name="{{ section.settings.anchor }}"></a>  -->
+
+
+{%- comment %} Section {% endcomment %}
 <section id="hero--{{ section.id }}" class="container-wrap hero hero-slider js-hero-slider hero--text-animation {% if transition == 'zoom-out' %}hero--zoom-out{% endif %} hero--is-loading hero--dots-{{ dots_position }} {{ section.settings.slide_height }}" id="slideshow-module-{{ section.id }}" data-section-type="slideshow" data-slick="{ 'arrows':{{ showNavArrows }}, 'dots':{{ showNavDots }}, 'autoplay':{{ autoplay }}, 'dotsClass':'slick-dots hero-dots-row row', 'autoplaySpeed':{{duration}}, 'speed':{{ speed }}, 'adaptiveHeight':{{ original_height }}, 'pauseOnHover':{{ hover }}, 'fade':{{ fadeMode }}, 'infinite':true }" data-image-height="{{ section.settings.slide_height }}">
 
 	{%- for block in section.blocks -%}
@@ -80,6 +85,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="slide-content {% unless has_bg %}no-background{% endunless %} slide-content--{{ contentWidth }}">
+
 									{%- if subheading != blank -%}
 										<div class="slide-content__subheading subheading-text">{{ subheading }}</div>
 									{%- endif -%}
@@ -200,6 +206,9 @@
 		{%- assign counter = counter | plus: 1 -%}
 	{%- endfor -%}
 </section>
+
+
+
 
 {%- if section.settings.show_arrow_down -%}
 	<a href="#" class="hero-scroll-down js-scroll-down" title="{{ 'slideshow.scroll_down' | t }}"><span class="icon icon-arrow-down"></span></a>

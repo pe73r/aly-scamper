@@ -3,7 +3,7 @@
     "color_heading_new": "#000000",
     "color_text_new": "#000000",
     "color_primary_new": "#a0d1ca",
-    "color_secondary_new": "#000000",
+    "color_secondary_new": "#a0d1ca",
     "color_border_new": "#e4e4e4",
     "color_background_new": "#ffffff",
     "color_button_bg": "#a0d1ca",
@@ -12,8 +12,8 @@
     "color_top_bar_text": "#000000",
     "color_header_bg_home": "#005844",
     "color_header_text_home": "#ffffff",
-    "color_header_bg": "rgba(0,0,0,0)",
-    "color_header_text": "#000000",
+    "color_header_bg": "#005844",
+    "color_header_text": "#ffffff",
     "color_header_bg_scroll": "#fff",
     "color_header_text_scroll": "#000000",
     "color_dropdown_bg": "#fff",
@@ -21,18 +21,18 @@
     "drawer_bg_color": "#fff",
     "drawer_text_color": "#000",
     "header_icon_color_home": "#000000",
-    "header_bg_color_home": "#ffffff",
+    "header_bg_color_home": "#fdfdfd",
     "header_icon_color": "#000000",
     "header_bg_color": "#ffffff",
     "header_icon_color_scroll": "#222222",
     "header_bg_color_scroll": "#ffffff",
     "color_badge_text": "#000000",
     "color_badge_bg": "#a0d1ca",
-    "color_footer_text": "#000000",
+    "color_footer_text": "#ffffff",
     "color_footer_bg": "#005844",
-    "color_bottom_bar_bg": "#fafafa",
+    "color_bottom_bar_bg": "#005844",
     "header_font_picker": "nunito_n4",
-    "base_font_size": 17,
+    "base_font_size": 16,
     "heading_letter_spacing": 2,
     "general_font_picker": "nunito_sans_n4",
     "body_font_size": 16,
@@ -50,7 +50,7 @@
     "search_suggested_pages_heading": "",
     "search_suggested_blog_heading": "",
     "search_suggested_text_color": "#ffffff",
-    "search_suggested_overlay_color": "#222222",
+    "search_suggested_overlay_color": "#005844",
     "search_suggested_overlay_opacity": 10,
     "image_aspect_ratio": 1,
     "show_quick_view": true,
@@ -58,7 +58,7 @@
     "price_hover": true,
     "show_quantity": true,
     "hover_image": true,
-    "color_swatches": true,
+    "color_swatches": false,
     "color_swatches_style": "circle",
     "products_rows": 3,
     "products_columns": 3,
@@ -88,7 +88,7 @@
     "show_multiple_currencies": false,
     "currency_format": "money_with_currency_format",
     "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
-    "default_currency": "USD",
+    "default_currency": "EUR",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/Alyscamps_Logo_bloc-Blanc.png",
     "checkout_logo_position": "left",
@@ -115,27 +115,6 @@
     "twitter_via": "",
     "promo_url": "",
     "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "logo": "shopify:\/\/shop_images\/Alyscamps_Logo_bloc-Blanc.png",
-          "logo_other": "",
-          "logo_max_width": 250,
-          "show_site_name": false,
-          "show_account_icon": true,
-          "menu_list": "main-menu",
-          "nav_layout": "standard",
-          "links_position": "links_center",
-          "logo_position": "logo_left",
-          "meganav_image": "",
-          "meganav_image_heading": "",
-          "meganav_image_link": "",
-          "show_announcement": false,
-          "show_announcement_on_mobile": false,
-          "text": "<p>Broadcast sales, promos, or other offerings here<\/p>",
-          "link": ""
-        }
-      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -170,7 +149,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family-1_9066-min-ConvertImage.jpg",
-              "image_mobile": "",
+              "image_mobile": "shopify:\/\/shop_images\/home_mobile_alyscamps.jpg",
               "image_position": "bottom-center",
               "alignment": "bottom-left",
               "content_width": "one-half",
@@ -179,14 +158,14 @@
               "title": "Alyscamps",
               "text": "<p>Prendre soin de soi. Et des autres. Naturellement.&nbsp;<\/p>",
               "cta": "Nos produits",
-              "link": "",
+              "link": "shopify:\/\/collections\/nos-soins",
               "cta_2": "Notre histoire",
-              "link_2": "",
-              "heading_size": "xlarge",
-              "text_size": "large",
+              "link_2": "shopify:\/\/pages\/la-maison-alyscamps",
+              "heading_size": "normal",
+              "text_size": "normal",
               "overlay_color": "#333333",
-              "overlay_opacity": 30,
-              "button_size": "large",
+              "overlay_opacity": 45,
+              "button_size": "normal",
               "cta_primary_btn_style": "primary",
               "cta_secondary_btn_style": "primary"
             }
@@ -209,27 +188,11 @@
       "product-template": {
         "type": "product-template",
         "blocks": {
-          "1581082273937": {
-            "type": "product-feature",
-            "settings": {
-              "title": "Sa composition",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary",
-              "blocks_alignment": "center",
-              "reverse_layout": false,
-              "heading_font_size": 28,
-              "text_font_size": 14
-            }
-          },
           "1581082316148": {
             "type": "product-feature",
             "settings": {
-              "title": "Ses vertus",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le des notes de fruits juteux gorg&eacute;s de soleil, envelopp&eacute;es par un c&oelig;ur floral frais &agrave; base de rose, de violette et d&rsquo;iris, sur un fond bois&eacute; doux, de c&egrave;dre et de figuier.<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -238,14 +201,14 @@
               "blocks_alignment": "center",
               "reverse_layout": true,
               "heading_font_size": 28,
-              "text_font_size": 14
+              "text_font_size": 16
             }
           },
           "1581082342927": {
             "type": "product-feature",
             "settings": {
-              "title": "Conseils d'utilisation",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -254,7 +217,23 @@
               "blocks_alignment": "center",
               "reverse_layout": false,
               "heading_font_size": 28,
-              "text_font_size": 14
+              "text_font_size": 16
+            }
+          },
+          "1582111671329": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Un packaging idéal",
+              "description": "<p>Un flacon-pompe pour favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (verre recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": true,
+              "heading_font_size": 28,
+              "text_font_size": 16
             }
           },
           "1581082363439": {
@@ -277,9 +256,9 @@
           }
         },
         "block_order": [
-          "1581082273937",
           "1581082316148",
           "1581082342927",
+          "1582111671329",
           "1581082363439"
         ],
         "settings": {
@@ -291,9 +270,9 @@
           "show_quantity": false,
           "show_cart_bar": true,
           "show_newsletter": true,
-          "text_newsletter": "<p>Notify me when this product is available:<\/p>",
-          "page_tab_1": "",
-          "page_tab_2": "",
+          "text_newsletter": "<p>Informez-moi d&egrave;s que le produit est &agrave; nouveau disponible<\/p>",
+          "page_tab_1": "sa-composition",
+          "page_tab_2": "formule-inci-soin-perfection",
           "page_tab_3": "",
           "product_slideshow_dots": false,
           "product_slideshow_arrows": false
@@ -515,16 +494,16 @@
           "transition": "slide",
           "autoplay": true,
           "duration": 4,
-          "color_style": "black",
-          "show_margins": false,
-          "slide_height": "five-fifty-height-hero",
+          "color_style": "white",
+          "show_margins": true,
+          "slide_height": "four-fifty-height-hero",
           "slide_image_position": "left",
-          "slide_image_width": "med_s34|med_s14",
+          "slide_image_width": "med_s35|med_s25",
           "subheading": "",
           "title": "",
           "content": "<p>Alyscamps est une maison fran&ccedil;aise de cosm&eacute;tiques puisant ses origines &agrave; Arles.&nbsp;<\/p>\n<p>Alyscamps propose des soins complets aux formulations clean et naturelles pour toute la famille, y compris les teenagers.&nbsp;<\/p>",
-          "cta": "",
-          "link": "",
+          "cta": "Découvrir",
+          "link": "shopify:\/\/pages\/la-maison-alyscamps",
           "button_style": "primary"
         }
       },
@@ -565,8 +544,8 @@
           "tags": true,
           "author": false,
           "show_comments": true,
-          "layout": "fullwidth",
-          "image_size": "normal",
+          "layout": "wrapped",
+          "image_size": "large",
           "article_rows": 3,
           "article_columns": 3,
           "accent_line": "curved",
@@ -648,7 +627,7 @@
           "1532039795680-0": {
             "type": "text",
             "settings": {
-              "icon_name": "shop",
+              "icon_name": "award",
               "icon_image": "",
               "title": "Experte",
               "content": "Pensée et créée par un docteur en pharmacie, les soins Alyscamps allient efficacité, sécurité et sensorialité."
@@ -657,7 +636,7 @@
           "1532039795680-1": {
             "type": "text",
             "settings": {
-              "icon_name": "shop",
+              "icon_name": "reload",
               "icon_image": "",
               "title": "Engagée",
               "content": "Éco-responsable et profondément sociale, Alyscamps s'attache à prendre soin de tous, en respectant l'environnement."
@@ -685,14 +664,15 @@
       },
       "1532041611167": {
         "type": "collection-list",
+        "disabled": true,
         "blocks": {
           "1532041611167-0": {
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "",
-              "vertical_description": "Uniques...",
-              "button_text": "Découvrir"
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
+              "vertical_description": "vertical",
+              "button_text": "button"
             }
           },
           "1532041611167-1": {
@@ -740,8 +720,8 @@
           "1532041611167-4"
         ],
         "settings": {
-          "title": "",
-          "subtitle": "",
+          "title": "Collection List",
+          "subtitle": "original section",
           "coll_text_position": "bottom_left",
           "show_description": true,
           "blocks_height": "default-height",
@@ -766,7 +746,7 @@
               "title": "Ouverture imminente !",
               "text": "<p>Fin avril, retrouvez tous nos produits dans notre boutique situ&eacute;e en plein coeur d'Arles...&nbsp;<\/p>",
               "cta": "En savoir plus...",
-              "link": "shopify:\/\/collections\/all",
+              "link": "https:\/\/alyscamps.myshopify.com\/pages\/la-maison-alyscamps#boutique",
               "cta_2": "",
               "link_2": "",
               "heading_size": "large",
@@ -907,16 +887,43 @@
               "cta_primary_btn_style": "primary",
               "cta_secondary_btn_style": "light"
             }
+          },
+          "1581428794359": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "content_width": "one-half",
+              "color_style": "white",
+              "subheading": "",
+              "title": "Welcome to Modular",
+              "text": "<p>A unique layout with a striking design<\/p>",
+              "cta": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "cta_2": "",
+              "link_2": "",
+              "heading_size": "large",
+              "text_size": "normal",
+              "overlay_color": "#333",
+              "overlay_opacity": 30,
+              "button_size": "normal",
+              "cta_primary_btn_style": "primary",
+              "cta_secondary_btn_style": "light"
+            }
           }
         },
         "block_order": [
-          "1579628645534"
+          "1579628645534",
+          "1581428794359"
         ],
         "settings": {
-          "showNavDots": true,
+          "anchor": "histoire",
+          "showNavDots": false,
           "showNavArrows": false,
           "show_arrow_down": false,
-          "autoplay": true,
+          "autoplay": false,
           "duration": 4,
           "transition": "slide",
           "dots_position": "center",
@@ -927,7 +934,7 @@
         "type": "rich-text-histoire",
         "settings": {
           "layout": "default",
-          "heading_align": "left",
+          "heading_align": "center",
           "heading_font_size": 28,
           "text_font_size": 16,
           "subheading": "",
@@ -947,7 +954,7 @@
           "1579629256918": {
             "type": "image",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/aroma-906137_1920.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -974,6 +981,7 @@
           "1579629256918"
         ],
         "settings": {
+          "anchor": "",
           "showNavDots": true,
           "showNavArrows": false,
           "show_arrow_down": false,
@@ -1016,7 +1024,7 @@
             "settings": {
               "heading": "D'une famille et d'une ville,",
               "description": "<p>Le natif d'Arles, Jean-Fran&ccedil;ois,&nbsp;<\/p>\n<p>L'arl&eacute;sienne de coeur, Julie, son &eacute;pouse,<\/p>\n<p>Camille et Pierre, les enfants.<\/p>",
-              "image": "",
+              "image": "shopify:\/\/shop_images\/famille_alyscamps.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1034,18 +1042,31 @@
               "button_link": "",
               "button_style": "primary"
             }
+          },
+          "1581424923877": {
+            "type": "text",
+            "settings": {
+              "heading": "De promesses :",
+              "description": "<p>Une d&eacute;marche &eacute;co-responsable,<\/p>\n<p>Un engagement social,<\/p>\n<p>Une dynamique locale,<\/p>\n<p>Une fabrication made in France.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary"
+            }
           }
         },
         "block_order": [
           "1579630223781",
           "1579630244135",
           "1580830251417",
-          "1580830298195"
+          "1580830298195",
+          "1581424923877"
         ],
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "image-with-text-2": {
@@ -1070,16 +1091,16 @@
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "slideshow-soins": {
         "type": "slideshow-soins",
         "blocks": {
-          "1580831339318": {
+          "1581429676696": {
             "type": "image",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1089,7 +1110,7 @@
               "title": "LES SOINS ALYSCAMPS",
               "text": "",
               "cta": "",
-              "link": "shopify:\/\/collections\/all",
+              "link": "",
               "cta_2": "",
               "link_2": "",
               "heading_size": "large",
@@ -1103,14 +1124,15 @@
           }
         },
         "block_order": [
-          "1580831339318"
+          "1581429676696"
         ],
         "settings": {
-          "showNavDots": true,
+          "anchor": "soins",
+          "showNavDots": false,
           "showNavArrows": false,
           "show_arrow_down": false,
-          "autoplay": true,
-          "duration": 4,
+          "autoplay": false,
+          "duration": 5,
           "transition": "slide",
           "dots_position": "center",
           "slide_height": "five-fifty-height-hero"
@@ -1151,7 +1173,7 @@
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "rich-text-soins": {
@@ -1220,16 +1242,16 @@
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "slideshow-engagements": {
         "type": "slideshow-engagements",
         "blocks": {
-          "1580833105044": {
+          "1581433926496": {
             "type": "image",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/olives-253264_960_720.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1239,7 +1261,7 @@
               "title": "NOS ENGAGEMENTS",
               "text": "",
               "cta": "",
-              "link": "shopify:\/\/collections\/all",
+              "link": "",
               "cta_2": "",
               "link_2": "",
               "heading_size": "large",
@@ -1253,13 +1275,14 @@
           }
         },
         "block_order": [
-          "1580833105044"
+          "1581433926496"
         ],
         "settings": {
-          "showNavDots": true,
+          "anchor": "engagements",
+          "showNavDots": false,
           "showNavArrows": false,
           "show_arrow_down": false,
-          "autoplay": true,
+          "autoplay": false,
           "duration": 4,
           "transition": "slide",
           "dots_position": "center",
@@ -1274,7 +1297,7 @@
             "settings": {
               "heading": "Valoriser les filières locales.",
               "description": "<p>Nous oeuvrons pour que la majorit&eacute; de nos actifs soient issus des ressources locales (olives, figues, tournesols, riz, amandes...).<\/p>\n<p>Ainsi, largement utilis&eacute;e dans la formulation de nos soins, l'huile d'olive ne d&eacute;roge pas &agrave; ce principe.<\/p>\n<p><\/p>\n<p>Moulinier depuis 1928, le Moulin de la Cravenco dispose d'une oliveraie travers&eacute;e par l'Aqueduc Romain de Barbegal et compos&eacute;e d'oliviers de plus de 60 ans. Ses atouts majeurs ? Un savoir-faire hors pair et une qualit&eacute; ind&eacute;niable.&nbsp;<\/p>\n<p><\/p>\n<p>L'huile d'olive vierge extra s&eacute;lectionn&eacute;e est extraite &agrave; froid et biologique. Elle d&eacute;tient l'appellation d'Origine Prot&eacute;g&eacute;e de la Vall&eacute;e des Beaux-de-Provence.<\/p>",
-              "image": "",
+              "image": "shopify:\/\/shop_images\/Moulin_La_Cravenco.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1316,18 +1339,44 @@
               "button_link": "",
               "button_style": "primary"
             }
+          },
+          "1581425099273": {
+            "type": "text",
+            "settings": {
+              "heading": "Développer l'économie circulaire.",
+              "description": "<p>Tant dans une logique anti-gaspillage que dans une volont&eacute; de profiter de tous ses bienfaits, les soins Alyscamps contiennent de l'huile d'olive ainsi que des d&eacute;riv&eacute;s de l'olivier.<\/p>\n<p>Alyscamps souhaite aller plus loin en s'impliquant davantage dans l'&eacute;conomie circulaire, notamment en valorisant les d&eacute;chets de l'olivier ou en utilisant les noyaux d'abricots.<\/p>\n<p>Le futur d'Alyscamps se dessine d&eacute;j&agrave; !&nbsp;<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary"
+            }
+          },
+          "1581425235785": {
+            "type": "text",
+            "settings": {
+              "heading": "Proposer des soins pour tous.",
+              "description": "<p>En d&eacute;veloppant une gamme de soins o&ugrave; l'efficacit&eacute; et la s&eacute;curit&eacute; ont une place de choix, Alyscamps souhaite rendre ses produits accessibles &agrave; ceux fragilis&eacute;s par la maladie.<\/p>\n<p>Des ateliers de socio-esth&eacute;tique seront propos&eacute;s en milieu hospitalier dans des services d'oncologie et de dermatologie.<\/p>\n<p>Retrouver l'estime de soi passe aussi par le plaisir de se faire de bien.&nbsp;<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary"
+            }
           }
         },
         "block_order": [
           "1580833178751",
           "1580833610707",
           "1580833735479",
-          "1580833811298"
+          "1580833811298",
+          "1581425099273",
+          "1581425235785"
         ],
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "slideshow-boutique": {
@@ -1336,7 +1385,7 @@
           "1580834304415": {
             "type": "image",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/IMG_0055.JPG",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1357,16 +1406,43 @@
               "cta_primary_btn_style": "primary",
               "cta_secondary_btn_style": "light"
             }
+          },
+          "1581428835931": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carrousel4.jpg",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "content_width": "one-half",
+              "color_style": "white",
+              "subheading": "",
+              "title": "Welcome to Modular",
+              "text": "<p>A unique layout with a striking design<\/p>",
+              "cta": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "cta_2": "",
+              "link_2": "",
+              "heading_size": "large",
+              "text_size": "normal",
+              "overlay_color": "#333",
+              "overlay_opacity": 30,
+              "button_size": "normal",
+              "cta_primary_btn_style": "primary",
+              "cta_secondary_btn_style": "light"
+            }
           }
         },
         "block_order": [
-          "1580834304415"
+          "1580834304415",
+          "1581428835931"
         ],
         "settings": {
-          "showNavDots": true,
+          "anchor": "boutique",
+          "showNavDots": false,
           "showNavArrows": false,
           "show_arrow_down": false,
-          "autoplay": true,
+          "autoplay": false,
           "duration": 4,
           "transition": "slide",
           "dots_position": "center",
@@ -1426,7 +1502,7 @@
         "settings": {
           "blocks_alignment": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 16
         }
       },
       "faq-section__product": {
@@ -1444,68 +1520,318 @@
           "product_recommendations_heading": "Vous aimerez aussi..."
         }
       },
-      "1581416012787": {
-        "type": "image-with-text-2",
+      "anchor-menu": {
+        "type": "anchor-menu",
         "blocks": {
-          "1581416012787-0": {
-            "type": "text",
+          "1581424526704": {
+            "type": "anchor",
             "settings": {
-              "heading": "This is a heading for a Product feature block.",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary"
+              "title": "L'histoire",
+              "anchor": "#histoire",
+              "link": ""
             }
           },
-          "1581416012787-1": {
-            "type": "text",
+          "1581424550218": {
+            "type": "anchor",
             "settings": {
-              "heading": "This is a heading for a Product feature block.",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary"
+              "title": "Les soins",
+              "anchor": "#soins",
+              "link": ""
             }
           },
-          "1581416012787-2": {
-            "type": "text",
+          "1581424591114": {
+            "type": "anchor",
             "settings": {
-              "heading": "This is a heading for a Product feature block.",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary"
+              "title": "Les engagements",
+              "anchor": "#engagements",
+              "link": ""
             }
           },
-          "1581416029241": {
-            "type": "text",
+          "1581424598380": {
+            "type": "anchor",
             "settings": {
-              "heading": "This is a heading for a Product feature block.",
-              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary"
+              "title": "La boutique",
+              "anchor": "#boutique",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "1581416012787-0",
-          "1581416012787-1",
-          "1581416012787-2",
-          "1581416029241"
+          "1581424526704",
+          "1581424550218",
+          "1581424591114",
+          "1581424598380"
         ],
         "settings": {
-          "blocks_alignment": "center",
+          "background-color": "#a0d1ca",
+          "color": "#ffffff",
+          "hover-background-color": "",
+          "hover-color": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Alyscamps_Logo_bloc-Blanc.png",
+          "logo_other": "",
+          "logo_max_width": 195,
+          "show_site_name": false,
+          "show_account_icon": false,
+          "menu_list": "main-menu",
+          "nav_layout": "standard",
+          "links_position": "links_center",
+          "logo_position": "logo_left",
+          "meganav_image": "",
+          "meganav_image_heading": "",
+          "meganav_image_link": "",
+          "show_announcement": false,
+          "show_announcement_on_mobile": true,
+          "text": "<p>Broadcast sales, promos, or other offerings here<\/p>",
+          "link": ""
+        }
+      },
+      "1581590988468": {
+        "type": "product-list",
+        "blocks": {
+          "1581590988468-0": {
+            "type": "product",
+            "settings": {
+              "product": "",
+              "image": "shopify:\/\/shop_images\/soins_alyscamps.jpg",
+              "title": "Uniques...",
+              "description": "",
+              "vertical_description": "",
+              "button_text": ""
+            }
+          },
+          "1581590988468-1": {
+            "type": "product",
+            "settings": {
+              "product": "",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Complet-pour-Elle_50mL_9066_2x3-min.jpg",
+              "title": "Naturels...",
+              "description": "",
+              "vertical_description": "",
+              "button_text": ""
+            }
+          },
+          "1581590988468-2": {
+            "type": "product",
+            "settings": {
+              "product": "",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Perfection_50mL_9066_2x3-min.jpg",
+              "title": "Clean...",
+              "description": "",
+              "vertical_description": "",
+              "button_text": ""
+            }
+          },
+          "1581590988468-3": {
+            "type": "product",
+            "settings": {
+              "product": "",
+              "image": "shopify:\/\/shop_images\/soins.jpg",
+              "title": "Efficaces...",
+              "description": "",
+              "vertical_description": "",
+              "button_text": ""
+            }
+          },
+          "1581590988468-4": {
+            "type": "product",
+            "settings": {
+              "product": "",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Complet-pour-Lui_50mL_9361-mine.jpg",
+              "title": "Pour votre <br>plaisir à tous...",
+              "description": "",
+              "vertical_description": "",
+              "button_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1581590988468-0",
+          "1581590988468-1",
+          "1581590988468-2",
+          "1581590988468-3",
+          "1581590988468-4"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "coll_text_position": "center",
+          "show_description": true,
+          "no-links": true,
+          "blocks_height": "default-height",
+          "text_color": "#ffffff",
+          "overlay_color": "#222222",
+          "overlay_opacity": 15
+        }
+      },
+      "product-template-2": {
+        "type": "product-template-2",
+        "blocks": {
+          "1582202158173": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le une dizaine de notes comme des notes de figuier, iris, violette, rose et c&egrave;dre.<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": true,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          },
+          "1582202200505": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": false,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          },
+          "1582202220026": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Un packaging idéal",
+              "description": "<p>Un flacon-pompe pour<\/p>\n<p>favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (le verre est recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": true,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          }
+        },
+        "block_order": [
+          "1582202158173",
+          "1582202200505",
+          "1582202220026"
+        ],
+        "settings": {
+          "product_layout": "slideshow",
+          "image_gallery": "zoom",
+          "image_size": "large",
+          "add_cart_position": "top",
+          "show_vendor": true,
+          "show_quantity": true,
+          "show_cart_bar": true,
+          "show_newsletter": true,
+          "text_newsletter": "<p>Informez-moi d&egrave;s que le produit est &agrave; nouveau disponible<\/p>",
+          "page_tab_1": "sa-composition-soin-complet-pour-elle",
+          "page_tab_2": "formule-inci-soin-complet-pour-elle",
+          "page_tab_3": "",
+          "product_slideshow_dots": false,
+          "product_slideshow_arrows": false
+        }
+      },
+      "rich-text-boutique-2": {
+        "type": "rich-text-boutique-2",
+        "settings": {
+          "layout": "default",
+          "heading_align": "center",
           "heading_font_size": 28,
-          "text_font_size": 14
+          "text_font_size": 20,
+          "subheading": "",
+          "title": "",
+          "content": "<p>La boutique se situe 16, Place de la R&eacute;publique &agrave; Arles.<\/p>\n<p>Son ouverture est pr&eacute;vue pour avril 2020.<\/p>\n<p>Pour &ecirc;tre tenu.e inform&eacute;.e, nous vous invitons &agrave; vous inscrire d&egrave;s maintenant &agrave; la newsletter !&nbsp;<\/p>",
+          "accent_line": "none",
+          "accent_line_color": "#333",
+          "cta": "",
+          "link": "",
+          "button_style": "primary",
+          "button_position": "left"
+        }
+      },
+      "product-template-3": {
+        "type": "product-template-3",
+        "blocks": {
+          "1582201725384": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le des notes de garrigue proven&ccedil;ale &agrave; la douceur suave d&rsquo;un bois de figuier. Ainsi, s&rsquo;y trouveront une dizaine de notes comme celles provenant du pin, de la menthe poivr&eacute;e, de la bergamote, de l&rsquo;iris, la myrte, la lavande ou la figue.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": true,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          },
+          "1582201747819": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": false,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          },
+          "1582201786340": {
+            "type": "product-feature",
+            "settings": {
+              "title": "Un packaging idéal",
+              "description": "<p>Un flacon-pompe pour<\/p>\n<p>favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (le verre est recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary",
+              "blocks_alignment": "center",
+              "reverse_layout": true,
+              "heading_font_size": 28,
+              "text_font_size": 16
+            }
+          }
+        },
+        "block_order": [
+          "1582201725384",
+          "1582201747819",
+          "1582201786340"
+        ],
+        "settings": {
+          "product_layout": "slideshow",
+          "image_gallery": "zoom",
+          "image_size": "large",
+          "add_cart_position": "top",
+          "show_vendor": true,
+          "show_quantity": true,
+          "show_cart_bar": true,
+          "show_newsletter": true,
+          "text_newsletter": "<p>Informez-moi d&egrave;s que le produit est &agrave; nouveau disponible<\/p>",
+          "page_tab_1": "sa-composition-soin-complet-pour-lui",
+          "page_tab_2": "formule-inci-le-soin-complet-pour-lui",
+          "page_tab_3": "",
+          "product_slideshow_dots": false,
+          "product_slideshow_arrows": false
         }
       }
     },
@@ -1515,12 +1841,12 @@
       "1532039018217",
       "1532039795680",
       "1532041611167",
+      "1581590988468",
       "1532041725090",
       "1532041814513",
       "1532041802273",
       "1532039151588",
-      "1579531077329",
-      "1581416012787"
+      "1579531077329"
     ]
   },
   "presets": {

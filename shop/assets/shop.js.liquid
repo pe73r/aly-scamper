@@ -6399,19 +6399,31 @@ MobileZoom = {
 
 /// Anchor menu ///
 
-console.log('you are reading this :)');
- var scrollTo = function(anchor){
-	console.log('anchor');
-	if(!$(anchor) || !$(anchor).offset()) return;
-	$('html, body').animate({
-		 scrollTop: $(anchor).offset().top
-	 }, 1000);
- }
+//  var scrollTo = function(anchor){
+// 	console.log('new anchor');
+// 	if(!$(anchor) || !$(anchor).offset()) return;
+// 	$('html, body').stop().animate({
+// 		 scrollTop: $(anchor).offset().top - 120
+// 	 }, 1000);
+// }
+//
+// $('.scroll-to').each(function(){
+//    $(this).click(function(){
+// 	   var anchor = $(this).attr('data-anchor');
+// 	   scrollTo(anchor);
+//    })
+// })
+ 
 
- $('.scroll-to').each(function(){
-		$(this).click(function(){
-		 var anchor = $(this).attr('data-anchor');
-		 scrollTo(anchor) ;
-		})
 
- })
+/// smooth scroll ///
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });

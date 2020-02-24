@@ -9216,7 +9216,7 @@ h1#password-logo a{
 	float: left;
 	width: 101px;
 	margin-left: 226px;
-	color: {{ settings.color_button_bg }};
+	color: {{ settings.color_button_text }};
 
 	@media screen and (max-width: ($med - 1)) {
 		position: relative;
@@ -9232,7 +9232,7 @@ h1#password-logo a{
 		padding: 0 35px;
 		// Background and text color should be the same as "light button" colors
 		color: inherit;
-		background: {{ settings.color_button_text }};
+		background: {{ settings.color_button_bg }};
 		border: 1px solid {{ settings.color_button_bg }};
 
 		&::-webkit-inner-spin-button,
@@ -14221,7 +14221,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 44px;
 	background: none;
 	border: none !important;
-	padding: 10px 26px!important;
+	padding: 10px 10px!important;
 	margin: 0;
 	text-transform: capitalize;
 	color: {{ settings.color_button_text }} !important;
@@ -14273,9 +14273,9 @@ div.shopify-payment-button__button--unbranded span:nth-child(2){
 }
 
 .add-to-cart-btn-style {
-	color: {{ settings.color_button_bg }} !important;
+	color: {{ settings.color_button_text }} !important;
 	border: 1px solid {{ settings.color_button_bg }};
-	background-color: {{ settings.color_button_text }} !important;
+	background-color: {{ settings.color_button_bg }} !important;
 	padding: 10px 17px;
 	line-height: normal;
 	height: 44px;
@@ -14368,6 +14368,8 @@ div.shopify-payment-button__button--unbranded span:nth-child(2){
 	.feature-text__p {
 		p {
 			font-size: inherit;
+			line-height: 1.8em;
+			margin-bottom: 0;
 		}
 	}
 
@@ -16180,8 +16182,12 @@ body.allow-animations {
   animation-name: fadeInRight;
 }
 
-/* #Custom Styles
+/* Custom Styles
 ================================================== */
+
+.no-pointer{
+	cursor: default;
+}
 
 /*==== Anchor menu ==============*/
 
@@ -16227,8 +16233,7 @@ body.allow-animations {
 }
 
 
-/* ========= Anchor menu sticky  ====*/
-
+/* ==== Anchor menu sticky  ====*/
 
 .position-sticky{
 	position: fixed;
@@ -16252,5 +16257,29 @@ body.allow-animations {
 		a {
 			padding: 15px 0;
 		}
+	}
+}
+
+/*==== Blog ==============*/
+
+.container-blog{
+	max-width: 1300px;
+	margin: auto;
+}
+
+/*==== Extra text in collection template ==============*/
+
+.CollectionText{
+	margin: 60px auto; 
+}
+
+.CollectionText__title{
+	text-align: center;
+}
+
+.CollectionText__content{
+	text-align: justify;
+	p{
+		font-size: inherit;
 	}
 }

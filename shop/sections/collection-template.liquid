@@ -17,6 +17,10 @@
 {% assign heading_size = section.settings.heading_size %}
 {% assign text_size = section.settings.text_size %}
 
+  {% comment %} Extra text size {% endcomment %}
+{% assign extratitle_size = section.settings.extratitle_size %}
+{% assign extratext_size = section.settings.extratext_size %}
+
 {%- if show_banner and collection.image -%}
   <style>
     .main-logo .logo-home:not(:last-child) { position: relative; visibility: visible; }
@@ -34,7 +38,7 @@
   {% if featured == 'products' %}
     {% assign featuredClass = ' has-featured-products' %}
   {% endif %}
-  
+
   {% capture pageTitle %}
     {% if show_title or showDescription or collection.handle == 'all' %}
     <div class="page-title">
@@ -76,7 +80,7 @@
       .banner .page-title h1 { color: {{ bannerColorText }} !important; }
       .banner .banner-inner::after { background-color: {{ bannerColorOverlay }}; opacity: {{ bannerOverlayOpacity }}; }
       .main-logo__text { color:{{ bannerColorText }}; }
-      
+
       .site-header.is-standard,
       .site-header.is-standard .main-logo__text,
       #cartTotal .cartToggle-items { color: {{ bannerColorText }}; }
@@ -95,7 +99,7 @@
           {% assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' %}
           {% include 'theme-rias' %}
           <img class="banner-img--original lazyload fade-in"
-               data-src="{{ image_url_pattern }}" 
+               data-src="{{ image_url_pattern }}"
                data-widths="[{{ image_widths }}]"
                data-aspectratio="{{ image.aspect_ratio }}"
                data-sizes="auto"
@@ -106,16 +110,27 @@
         {% endunless %}
 
         {{ pageTitle }}
-      </div>  
+      </div>
     </section>
   {%- else -%}
     {{ pageTitle }}
   {%- endif -%}
+    <!--  extra text 24/02-->
+    <section class="CollectionText collectionGrid-header">
+      <div class="container">
+        {% if section.settings.title != blank %}
+         <h2 class="CollectionText__title size--{{ extratitle_size }}">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.content != blank %}
+         <div class="CollectionText__content size--{{ extratext_size }}">{{ section.settings.content }}</div>
+        {% endif %}
+      </div>
+    </section>
 
     <section class="collectionGrid container-wrap" data-show-quickview="{{ settings.show_quick_view }}">
       <div class="container">
         <div class="collectionGrid-nav collectionGrid-row row inline">
-          
+
           {%- if settings.show_breadcrumbs -%}
             <div class="breadcrumbs block">
               {%- include 'site-breadcrumbs' -%}
@@ -166,7 +181,7 @@
             <a class="button" href="/collections/all">{{ 'collections.errors.continue_shopping' | t }}</a>
           </div>
         {% endif %}
-        
+
         {% paginate collection.products by productLimit %}
         <div id="MainContent">
           <div class="js-collectionGrid collectionGrid-row row inline {{ featuredClass }} EndlessClick" data-show_reviews="{{ show_reviews }}" data-show_quantity="{{ settings.show_quantity }}" data-color_swatches="{{ color_swatches }}">
@@ -187,12 +202,12 @@
                   .featured__content h1 { color: {{ featuredColorText }} !important; }
                   .featured__image::after { background-color: {{ featuredColorOverlay }}; opacity: {{ featuredOverlayOpacity }}; }
                 </style>
-              
+
                 <div class="collectionBlock js-collectionBlock s1 featured-block {% if columnsSize == '4' %}lg_s12 featured-block--large{% else %} {{ collectionBlock--size }} featured-block--default{% endif %}">
                   <div class="featured-block__container">
                     <div class="featured-block__wrapper">
                       {%- unless featuredImage == blank -%}
-                        <div class="featured__image lazyload" 
+                        <div class="featured__image lazyload"
                           data-bgset="{% include 'bgset', image: featuredImage %}"
                           data-sizes="auto"
                           data-parent-fit="cover"
@@ -229,7 +244,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              
+
               {% for product in collection.products %}
                 {% include 'product-grid-item' %}
               {% endfor %}
@@ -244,7 +259,7 @@
                   <div class="load-more-icon"></div>
                 </div>
               {% endif %}
-              
+
             </div>
           </div>
 
@@ -279,7 +294,6 @@
       "label": "Show Sort By filter",
       "default": true
     },
-    
     {
       "type": "header",
       "content": "Banner image"
@@ -338,7 +352,7 @@
     },
     {
       "type": "header",
-      "content": "Typography"
+      "content": "Banner text"
     },
     {
       "type": "select",
@@ -356,6 +370,46 @@
       "type": "select",
       "id": "text_size",
       "label": "Text size",
+      "default": "normal",
+      "options": [
+        { "label": "Small", "value": "small" },
+        { "label": "Normal", "value": "normal" },
+        { "label": "Large", "value": "large" },
+        { "label": "Extra large", "value": "xlarge" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Extra text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "select",
+      "id": "extratitle_size",
+      "label": "Title size",
+      "default": "normal",
+      "options": [
+        { "label": "Small", "value": "small" },
+        { "label": "Normal", "value": "normal" },
+        { "label": "Large", "value": "large" },
+        { "label": "Extra large", "value": "xlarge" }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+    },
+    {
+      "type": "select",
+      "id": "extratext_size",
+      "label": "Content size",
       "default": "normal",
       "options": [
         { "label": "Small", "value": "small" },

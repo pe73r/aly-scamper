@@ -45,7 +45,7 @@ $xxl: 1400px;
 
 // Colors
 $c-primary: #a0d1ca;
-$c-secondary: #000000;
+$c-secondary: #a0d1ca;
 $c-background: #ffffff;
 $c-background-light: #FAFAFA;
 $c-heading: #000000;
@@ -53,8 +53,8 @@ $c-text: #000000;
 $c-border: #e4e4e4;
 $dark-overlay: rgba(black, .75);
 $light-overlay: rgba(white, .75);
-$c-header-bg: rgba(0,0,0,0);
-$c-header-text: #000000;
+$c-header-bg: #005844;
+$c-header-text: #ffffff;
 $c-header-bg-home: #005844;
 $c-header-text-home: #ffffff;
 $c-header-bg-scroll: #fff;
@@ -62,12 +62,12 @@ $c-header-text-scroll: #000000;
 $c-header-icon: #000000;
 $c-header-icon-bg: #ffffff;
 $c-header-icon-home: #000000;
-$c-header-icon-bg-home: #ffffff;
+$c-header-icon-bg-home: #fdfdfd;
 $c-header-icon-scroll: #222222;
 $c-header-icon-bg-scroll: #ffffff;
-$c-footer-text: #000000;
+$c-footer-text: #ffffff;
 $c-footer-bg: #005844;
-$c-bottom-bar-bg: #fafafa;
+$c-bottom-bar-bg: #005844;
 $c-dropdown-bg: #fff;
 $c-dropdown-text: #000000;
 $c-drawer-text: #000;
@@ -219,7 +219,7 @@ $general_font: "Nunito Sans", sans-serif;
 $general_font: 'More W01 Wide Light', sans-serif;
 
 $header_font: Nunito, sans-serif;
-$header_font: 'More W01 Wide Book', sans-serif; 
+$header_font: 'More W01 Wide Book', sans-serif;
 
 
 $general_font_weight: 400;
@@ -228,7 +228,7 @@ $header_font_weight: 400;
 $general_font_style: normal;
 $header_font_style: normal;
 
-$font_base_size: 17px;
+$font_base_size: 16px;
 $font_bodytext_size: 16px;
 
 $font_weight_light: 200;
@@ -6471,7 +6471,7 @@ div.mce_inline_error {
 .popover-error {
 	@include blockRel;
 
-	color: #000000;
+	color: #a0d1ca;
 	padding: 10px 20px;
 	text-align: left;
 	width: 250px;
@@ -8561,7 +8561,7 @@ hr {
 .load-more-icon {
 	width: 79px;
 	height: 64px;
-	background: url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?912) no-repeat;
+	background: url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?v=1644348097649813470) no-repeat;
 	background-size: contain;
 	margin: 0 auto;
 	display: none;
@@ -8735,7 +8735,7 @@ html.overflow--hidden {
 	padding-top: 160px;
 
 	@media screen and (max-width: $xl){
-			padding-top: 140px;
+			padding-top: 120px;
 	}
 	@media screen and (max-width: ($med - 1)){
 			padding-top: 120px;
@@ -10369,7 +10369,7 @@ h1#password-logo a{
 	&.zoom--is-loading {
 		&::after {
 			@include blockAb;
-			background-image: url('//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?912');
+			background-image: url('//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?v=1644348097649813470');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 79px 64px !important;
@@ -12450,7 +12450,7 @@ https://flickity.metafizzy.co
 			display: block;
 			width: 79px;
 			height: 64px;
-			background: url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?912) no-repeat;
+			background: url(//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/load-more.gif?v=1644348097649813470) no-repeat;
 			background-size: contain;
 			margin: 15px auto;
 		}
@@ -12527,7 +12527,7 @@ https://flickity.metafizzy.co
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #222222;
+		background-color: #005844;
 		opacity: 0.1;
 	}
 
@@ -16071,7 +16071,7 @@ body.allow-animations {
 			&.lazyloading {
 			  opacity: .65;
 			  background-color: $c-background;
-			  background-image: url( "//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/loader.svg?912" );
+			  background-image: url( "//cdn.shopify.com/s/files/1/0286/8720/4400/t/2/assets/loader.svg?v=17006130548883370982" );
 			  background-size: 64px auto !important;
 			  background-repeat: no-repeat;
 			  background-position: center center;
@@ -16210,4 +16210,83 @@ body.allow-animations {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+
+/* Custom Styles
+================================================== */
+
+.no-pointer{
+	cursor: default;
+}
+
+/*==== Anchor menu ==============*/
+
+.Anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+
+  @supports (--css: variables) {
+    top: calc(-1 * (var(--header-height))); /* + var(--announcement-bar-height)));*/
+  }
+}
+
+.anchor-menu{
+	background-color : transparent;
+	width: 100%;
+}
+
+.anchor-menu_container{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+	max-width: 850px;
+}
+
+.anchor-link{
+	padding: 14px 14px;
+	cursor : pointer;
+}
+.anchor-link:hover{
+	transition : 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+	.anchor-link{
+		padding: 8px 14px;
+	}
+	.anchor-menu_container{
+		flex-wrap: wrap;
+	}
+}
+
+
+/* ==== Anchor menu sticky  ====*/
+
+
+.position-sticky{
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 3;
+}
+
+
+@media screen and (max-width: 1023px) {
+	.position-sticky{
+		position: sticky;
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.anchor-menu_container{
+		flex-direction: column;
+		text-align: center;
+		a {
+			padding: 15px 0;
+		}
+	}
 }
