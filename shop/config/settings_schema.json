@@ -63,7 +63,7 @@
       {
         "type": "color",
         "id": "color_button_text",
-        "label": "Text", 
+        "label": "Text",
         "default": "#ffffff"
       },
       {
@@ -117,6 +117,12 @@
         "type": "color",
         "id": "color_header_text",
         "label": "Header text",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_menu_in_collection_page", 
+        "label": "Text menu in collection page",
         "default": "#000"
       },
       {

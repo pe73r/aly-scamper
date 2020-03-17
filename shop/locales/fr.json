@@ -16,7 +16,13 @@
       },
       "shopify": "Shopify",
       "copyright_html": "",
-      "twitter": ""
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "pinterest": "Pinterest",
+      "youtube": "YouTube",
+      "tumblr": "Tumblr",
+      "rss": "RSS"
     },
     "slide_out_navigation": {
       "search_label": "Rechercher",
@@ -24,7 +30,9 @@
     },
     "newsletter_signup": {
       "email_placeholder": "Adresse email",
-      "success_message": "Merci d'avoir souscrit ! "
+      "success_message": "Merci d'avoir souscrit ! ",
+      "title": "Newsletter",
+      "error_message": "Une erreur est survenue en envoyant le formulaire."
     },
     "reviews": {
       "title": "Avis"
@@ -52,7 +60,9 @@
       "price_ascending": "Prix : - cher au + cher",
       "price_descending": "Prix : + cher au - cher",
       "created_ascending": "Ancien au récent",
-      "created_descending": "Récent à ancien"
+      "created_descending": "Récent à ancien",
+      "title_ascending": "A-Z",
+      "title_descending": "Z-A"
     },
     "pagination": {
       "load_more": "Charger plus"
@@ -72,10 +82,14 @@
     "labels": {
       "sold_out": "Épuisé",
       "unavailable": "Indisponible",
-      "view_all": "Tout voir"
+      "view_all": "Tout voir",
+      "on_sale": "Vendu",
+      "selected_product": "Sélectionné",
+      "price_from": "à partir de"
     },
     "shop_bar": {
-      "buy_label": "Acheter"
+      "buy_label": "Acheter",
+      "back_to_top": "Retour au haut de la page"
     },
     "form": {
       "qty": "Quantité",
@@ -83,7 +97,8 @@
       "submit": "Ajouter au panier",
       "sold_out": "Vendu",
       "success": "Ajouté ",
-      "submit_error": "Oops"
+      "submit_error": "Oops",
+      "submit_error_details": "Désolé, il semblerait que nous n'ayons pas assez de stocks pour ce produit. S'il vous plait, essayer d'en ajouter moins à votre panier. "
     },
     "product_page": {
       "product_details": "À propos",
@@ -98,7 +113,13 @@
       "back_to": "Revenir à",
       "newer_articles": "Articles récents",
       "older_articles": "Anciens articles",
-      "follow": "Suivre"
+      "follow": "Suivre",
+      "no_article": "Il n'y a aucun articles publiés.",
+      "comment_count": {
+        "one": "{{count}} commentaires",
+        "other": "{{count}} commentaires"
+      },
+      "posts_tagged": "Articles avec le tag"
     },
     "article": {
       "social_share": "Partager : ",
@@ -111,8 +132,23 @@
       "onboarding": {
         "author": "Nom de l'auteur",
         "title": "Titre de l'article blog",
-        "tags": "Tag"
-      }
+        "tags": "Tag",
+        "excerpt": "Une fois que vous aurez créer le post, le contenu apparaitra ici. "
+      },
+      "comment_email": "Email",
+      "comment_email_placeholder": "votre@email.com",
+      "tags_label": "Tag",
+      "comment_message": "Message",
+      "comment_message_placeholder": "Message",
+      "comment_count": {
+        "one": "Commentaires ({{ count }})",
+        "other": "Commentaires ({{ count }})"
+      },
+      "back_to_all_posts": "Revenir à {{ title }}",
+      "comment_post_success": "Votre commentaire va être posté. Merci ! ",
+      "by_author": "par {{ author }}",
+      "comment_post_notification": "Votre commentaire va être publié rapidement.",
+      "comment_date_on": "le"
     }
   },
   "cart": {
@@ -121,13 +157,27 @@
       "product": "Produit",
       "price": "Prix",
       "quantity": "Quantité",
-      "cart": "Panier"
+      "cart": "Panier",
+      "empty_cart": "Votre panier est vide",
+      "continue_shopping": "Continuer mes achats",
+      "total": "Total",
+      "subtotal": "Sous-total",
+      "notes": "Notes",
+      "add_a_note": "Notes",
+      "remove": "Retirer",
+      "items_added": "article(s) ajoutés à votre panier",
+      "update": "Mise à jour",
+      "checkout": "Panier",
+      "out_of_stock": "Rupture de stock",
+      "properties": "Propriétés"
     }
   },
   "contact": {
     "form": {
       "submit_button": "Soumettre",
-      "submit_success": "Merci de nous avoir contacté ! "
+      "submit_success": "Merci de nous avoir contacté ! ",
+      "email_field": "Email",
+      "message_field": "Message"
     }
   },
   "search": {
@@ -140,13 +190,17 @@
         "no_results": "Aucun résultat trouvé"
       },
       "placeholder": "Entrez une recherche pour commencer",
-      "popular": "Recherches populaires"
+      "popular": "Recherches populaires",
+      "has_results": "Montrer les résultats pour \"{{search}}\"",
+      "no_results": "Votre recherche pour \"{{search}}\" n'a donné aucun résultats"
     },
     "button": {
       "text": "Rechercher"
     },
     "suggested": {
-      "blog_posts": "Articles blogs"
+      "blog_posts": "Articles blogs",
+      "collection": "Collection",
+      "pages": "Pages"
     }
   },
   "customer": {
@@ -162,7 +216,9 @@
       "sign_in": "Se connecter",
       "cancel": "Retourner à la boutique",
       "guest_continue": "Continuer en tant qu'invité",
-      "forgot_password": "Récupérer le mot de passe"
+      "forgot_password": "Récupérer le mot de passe",
+      "email": "Email",
+      "guest_title": "ou"
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe",
@@ -175,7 +231,8 @@
       "title": "Récupérer le mot de passe",
       "submit": "Réinitialiser le mot de passe",
       "cancel": "Annuler",
-      "subtext": "S'il vous plaît, entrez votre email et nous vous enverrons un lien pour réinitialiser votre mot de passe."
+      "subtext": "S'il vous plaît, entrez votre email et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "email": "Email"
     },
     "register": {
       "first_name": "Prénom",
@@ -183,7 +240,8 @@
       "title": "Enregistrer votre compte",
       "password": "Mot de passe",
       "submit": "Soumettre",
-      "cancel": "Annuler"
+      "cancel": "Annuler",
+      "email": "Email"
     },
     "account": {
       "title": "Compte",
@@ -195,7 +253,9 @@
       "none": "Pas de commandes récentes",
       "order_number": "Numéro de la commande",
       "payment_status": "Paiement",
-      "fulfillment_status": "Statut de la commande"
+      "fulfillment_status": "Statut de la commande",
+      "date": "Date",
+      "total": "Total"
     },
     "order": {
       "title": "Commande",
@@ -214,7 +274,8 @@
       "summary": "Récapitulatif",
       "cancelled": "Annulé",
       "cancelled_reason": "Raison de l'annulation",
-      "discount": "Réduction"
+      "discount": "Réduction",
+      "total": "Total"
     },
     "addresses": {
       "title": "Adresses sauvegardées",
@@ -236,7 +297,8 @@
       "cancel": "Annuler",
       "update": "Mettre à jour",
       "edit_address": "Éditer l'adresse",
-      "not_blank": "* ne peut être vide"
+      "not_blank": "* ne peut être vide",
+      "default": "Default"
     },
     "activate_account": {
       "title": "Activer le compte",
@@ -255,12 +317,19 @@
       "enter_password_placeholder": "Votre mot de passe",
       "call_to_action": "Entrer",
       "success": "Merci d'avoir souscrit ! "
+    },
+    "content": {
+      "close": "Fermer",
+      "powered_by": "La boutique sera",
+      "admin_login": "Se connecter ici ",
+      "welcome_headline": "Ouverture prochaine",
+      "admin_link": "Êtes-vous le propriétaire de la boutique ? "
     }
   },
   "instagram": {
     "follow": "Suivre",
     "link_label": "Post Instagram",
-    "likes": "",
+    "likes": "likes",
     "months": "Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre",
     "view_on_instagram": "Voir sur Instagram"
   },
@@ -287,6 +356,32 @@
   "shopify": {
     "links": {
       "powered_by_shopify": " "
+    },
+    "checkout": {
+      "stock": {
+        "continue_shopping_button_label": "Continuer"
+      }
     }
+  },
+  "date_formats": {
+    "month_day_year": "%b %d, %Y"
+  },
+  "gift_cards": {
+    "content": {
+      "title_html": "Votre carte cadeau est arrivée !",
+      "message": "Voici votre carte cadeau ! ",
+      "instructions": "Utilisez le code au moment du checkout pour échanger votre carte cadeau",
+      "call_to_action": "Commencer mes achats"
+    },
+    "labels": {
+      "disabled": "Désactivé",
+      "expired": "Expire le ",
+      "expires": "Expire le",
+      "print": "Imprimer",
+      "apple_wallet": "Ajouter à l'Apple Wallet"
+    }
+  },
+  "slideshow": {
+    "scroll_down": "Faire défiler vers le bas"
   }
 }

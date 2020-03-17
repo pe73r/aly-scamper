@@ -48,14 +48,14 @@ $c-primary: #a0d1ca;
 $c-secondary: #a0d1ca;
 $c-background: #ffffff;
 $c-background-light: #FAFAFA;
-$c-heading: #000000;
+$c-heading: #256359;
 $c-text: #000000;
 $c-border: #e4e4e4;
 $dark-overlay: rgba(black, .75);
 $light-overlay: rgba(white, .75);
-$c-header-bg: #005844;
+$c-header-bg: #ffffff;
 $c-header-text: #ffffff;
-$c-header-bg-home: #005844;
+$c-header-bg-home: rgba(0,0,0,0);
 $c-header-text-home: #ffffff;
 $c-header-bg-scroll: #fff;
 $c-header-text-scroll: #000000;
@@ -65,15 +65,15 @@ $c-header-icon-home: #000000;
 $c-header-icon-bg-home: #fdfdfd;
 $c-header-icon-scroll: #222222;
 $c-header-icon-bg-scroll: #ffffff;
-$c-footer-text: #ffffff;
-$c-footer-bg: #005844;
-$c-bottom-bar-bg: #005844;
+$c-footer-text: #256359;
+$c-footer-bg: #e3f1ef;
+$c-bottom-bar-bg: #e3f1ef;
 $c-dropdown-bg: #fff;
 $c-dropdown-text: #000000;
 $c-drawer-text: #000;
 $c-drawer-bg: #fff;
 $c-badge-text: #000000;
-$c-badge-bg: #a0d1ca;
+$c-badge-bg: #e3f1ef;
 
 // Custom cursor
 .custom-cursor {
@@ -2137,8 +2137,8 @@ i {
 	text-align: center !important;
 	text-decoration: none !important; // In case this, .button is applied to an anchor tag.
 	letter-spacing: 0px;
-	background-color: #a0d1ca;
-	color: #000000;
+	background-color: #005844;
+	color: #ffffff;
 	border: 1px solid transparent;
 	border-radius: 0 !important;
 
@@ -2155,8 +2155,8 @@ button, .button {
 .btn { @extend button; }
 
 .button--light {
-	background-color: #000000;
-	color: #a0d1ca;
+	background-color: #ffffff;
+	color: #005844;
 }
 
 @include placeholder {
@@ -3137,7 +3137,7 @@ float: right;
 			}
 		}
 
-		.button--light { border-color: #a0d1ca; }
+		.button--light { border-color: #005844; }
 	}
 }
 hr {
@@ -3424,7 +3424,7 @@ hr {
 
 	.pagination { margin: 0; }
 	.button { min-width: 150px; }
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 }
 
 .collectionList {
@@ -4404,7 +4404,7 @@ hr {
 		vertical-align: middle;
 	}
 	.button { @include transition(.3s opacity); }
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 }
 /**
  * This is the vertically aligned bit.
@@ -4952,7 +4952,7 @@ hr {
 	.slick-track { margin: 0 auto; }
 	.js-error { display: none; }
 
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 }
 .instagram-slider {
 	overflow: hidden;
@@ -5445,7 +5445,7 @@ div.mce_inline_error {
 	.accent-line { margin: 22px auto; }
 	.accent-line--straight { margin: 20px auto 16px; }
 
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 
 	@media screen and (min-width: $med) {
 		margin: 110px 0;
@@ -5693,7 +5693,7 @@ div.mce_inline_error {
 		overflow: hidden;
 		z-index: 1010;
 		text-align: left;
-		background-color: #a0d1ca;
+		background-color: #eee8d8;
 		@media screen and (min-width: $med){
 				text-align: center;
 		}
@@ -6354,9 +6354,9 @@ div.mce_inline_error {
 	white-space: nowrap;
 
 	&:not(.js-continueShopping--empty) {
-		background-color: #000000;
-		color: #a0d1ca;
-		border: 2px solid #a0d1ca;
+		background-color: #ffffff;
+		color: #005844;
+		border: 2px solid #005844;
 	}
 
 	&.js-continueShopping--empty {
@@ -9248,7 +9248,7 @@ h1#password-logo a{
 	float: left;
 	width: 101px;
 	margin-left: 226px;
-	color: #a0d1ca;
+	color: #ffffff;
 
 	@media screen and (max-width: ($med - 1)) {
 		position: relative;
@@ -9264,8 +9264,8 @@ h1#password-logo a{
 		padding: 0 35px;
 		// Background and text color should be the same as "light button" colors
 		color: inherit;
-		background: #000000;
-		border: 1px solid #a0d1ca;
+		background: #005844;
+		border: 1px solid #005844;
 
 		&::-webkit-inner-spin-button,
 		&::-webkit-outer-spin-button {
@@ -10464,7 +10464,7 @@ h1#password-logo a{
 	left: 50%;
 	z-index: 10;
 	font-size: $font_bodytext_size * 5;
-	color: #000000;
+	color: #ffffff;
 	@include transform(unquote('translate(-50%, -50%)'));
 	@include transition(unquote('transform .3s ease'));
 
@@ -14253,11 +14253,11 @@ h1, h2, h3, h4, h5, h6 {
 	height: 44px;
 	background: none;
 	border: none !important;
-	padding: 10px 26px!important;
+	padding: 10px 10px!important;
 	margin: 0;
 	text-transform: capitalize;
-	color: #000000 !important;
-	background-color: #a0d1ca !important;
+	color: #ffffff !important;
+	background-color: #005844 !important;
 }
 
 .featured-product {
@@ -14305,9 +14305,9 @@ div.shopify-payment-button__button--unbranded span:nth-child(2){
 }
 
 .add-to-cart-btn-style {
-	color: #a0d1ca !important;
-	border: 1px solid #a0d1ca;
-	background-color: #000000 !important;
+	color: #ffffff !important;
+	border: 1px solid #005844;
+	background-color: #005844 !important;
 	padding: 10px 17px;
 	line-height: normal;
 	height: 44px;
@@ -14400,10 +14400,12 @@ div.shopify-payment-button__button--unbranded span:nth-child(2){
 	.feature-text__p {
 		p {
 			font-size: inherit;
+			line-height: 1.8em;
+			margin-bottom: 0;
 		}
 	}
 
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 
 	@media screen and (max-width: ($lg)) {
 		.feature-image {
@@ -14881,7 +14883,7 @@ div.spr-form-input {border:none;}
 		padding: 30px 0 15px;
 	}
 
-	.button--light { border-color: #a0d1ca; }
+	.button--light { border-color: #005844; }
 }
 
 .mosaic__content-container {
@@ -16256,15 +16258,16 @@ body.allow-animations {
 @media screen and (max-width: 800px) {
 	.anchor-link{
 		padding: 8px 14px;
+		width: 50%;
 	}
 	.anchor-menu_container{
 		flex-wrap: wrap;
+		flex-direction: row;
 	}
 }
 
 
 /* ==== Anchor menu sticky  ====*/
-
 
 .position-sticky{
 	position: fixed;
@@ -16283,10 +16286,34 @@ body.allow-animations {
 
 @media screen and (max-width: 600px) {
 	.anchor-menu_container{
-		flex-direction: column;
+		flex-direction: row; 
 		text-align: center;
 		a {
 			padding: 15px 0;
 		}
+	}
+}
+
+/*==== Blog ==============*/
+
+.container-blog{
+	max-width: 1300px;
+	margin: auto;
+}
+
+/*==== Extra text in collection template ==============*/
+
+.CollectionText{
+	margin: 60px auto;
+}
+
+.CollectionText__title{
+	text-align: center;
+}
+
+.CollectionText__content{
+	text-align: justify;
+	p{
+		font-size: inherit;
 	}
 }

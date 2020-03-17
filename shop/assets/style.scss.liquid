@@ -75,6 +75,9 @@ $c-drawer-bg: {{ settings.drawer_bg_color }};
 $c-badge-text: {{ settings.color_badge_text }};
 $c-badge-bg: {{ settings.color_badge_bg }};
 
+
+$c-text-menu-in-collection: {{ settings.color_menu_in_collection_page }};
+
 // Custom cursor
 .custom-cursor {
 	.collectionBlock,
@@ -11679,6 +11682,15 @@ https://flickity.metafizzy.co
 /*
  * Header
  */
+
+ .template-collection{
+	 .site-header{
+		 &.is-standard{
+			 color: $c-text-menu-in-collection;
+		 }
+	 }
+ }
+
 .site-header {
 	@include blockAb;
 	@include transition(unquote('background .2s, left .2s, opacity .15s, transform .3s, height .2s'));
@@ -11709,6 +11721,8 @@ https://flickity.metafizzy.co
 	}
 
 	@media screen and (min-width: $lg) {
+
+
 		&.is-standard {
 			position: fixed;
 			top: 0;
@@ -16254,7 +16268,7 @@ body.allow-animations {
 
 @media screen and (max-width: 600px) {
 	.anchor-menu_container{
-		flex-direction: row; 
+		flex-direction: row;
 		text-align: center;
 		a {
 			padding: 15px 0;

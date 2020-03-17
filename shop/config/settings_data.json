@@ -1,18 +1,18 @@
 {
   "current": {
-    "color_heading_new": "#000000",
+    "color_heading_new": "#256359",
     "color_text_new": "#000000",
     "color_primary_new": "#a0d1ca",
     "color_secondary_new": "#a0d1ca",
     "color_border_new": "#e4e4e4",
     "color_background_new": "#ffffff",
-    "color_button_bg": "#a0d1ca",
-    "color_button_text": "#000000",
-    "color_top_bar": "#a0d1ca",
+    "color_button_bg": "#005844",
+    "color_button_text": "#ffffff",
+    "color_top_bar": "#eee8d8",
     "color_top_bar_text": "#000000",
-    "color_header_bg_home": "#005844",
+    "color_header_bg_home": "rgba(0,0,0,0)",
     "color_header_text_home": "#ffffff",
-    "color_header_bg": "#005844",
+    "color_header_bg": "#ffffff",
     "color_header_text": "#ffffff",
     "color_header_bg_scroll": "#fff",
     "color_header_text_scroll": "#000000",
@@ -27,10 +27,10 @@
     "header_icon_color_scroll": "#222222",
     "header_bg_color_scroll": "#ffffff",
     "color_badge_text": "#000000",
-    "color_badge_bg": "#a0d1ca",
-    "color_footer_text": "#ffffff",
-    "color_footer_bg": "#005844",
-    "color_bottom_bar_bg": "#005844",
+    "color_badge_bg": "#e3f1ef",
+    "color_footer_text": "#256359",
+    "color_footer_bg": "#e3f1ef",
+    "color_bottom_bar_bg": "#e3f1ef",
     "header_font_picker": "nunito_n4",
     "base_font_size": 16,
     "heading_letter_spacing": 2,
@@ -53,7 +53,7 @@
     "search_suggested_overlay_color": "#005844",
     "search_suggested_overlay_opacity": 10,
     "image_aspect_ratio": 1,
-    "show_quick_view": true,
+    "show_quick_view": false,
     "show_quick_view_description": true,
     "price_hover": true,
     "show_quantity": true,
@@ -66,7 +66,7 @@
     "enable_cart_order_notes": true,
     "show_continue_shopping": true,
     "tax_text": "Hors taxes et frais de port",
-    "enable_payment_button": true,
+    "enable_payment_button": false,
     "show_custom_cursor": false,
     "custom_cursor_image": "",
     "show_breadcrumbs": true,
@@ -74,17 +74,17 @@
     "enable_yotpo": false,
     "yotpo_ID": "",
     "favicon": "shopify:\/\/shop_images\/favicon_alyscamps.png",
-    "social_share_image": "",
-    "twitter_url": "a",
-    "facebook_url": "a",
-    "pinterest_url": "a",
-    "instagram_url": "a",
+    "social_share_image": "shopify:\/\/shop_images\/ALYSCAMPS_Family-1_9066-min-ConvertImage_e6fa3e04-308a-4837-b239-65e8036df21c.jpg",
+    "twitter_url": "",
+    "facebook_url": "https:\/\/www.facebook.com\/Alyscamps-104046201179571\/",
+    "pinterest_url": "",
+    "instagram_url": "https:\/\/www.instagram.com\/alyscamps.co\/",
     "tumblr_url": "",
     "youtube_url": "",
     "rss_url": "",
     "share_on_twitter": true,
     "share_on_facebook": true,
-    "share_on_pinterest": true,
+    "share_on_pinterest": false,
     "show_multiple_currencies": false,
     "currency_format": "money_with_currency_format",
     "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
@@ -118,15 +118,19 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "show_title": false,
+          "show_title": true,
           "show_filter": false,
           "show_sort_filter": false,
           "show_banner": true,
-          "banner_height": "one-hundred",
+          "banner_height": "small",
           "banner_subheading": "",
           "banner_text_position": "center",
           "heading_size": "normal",
           "text_size": "normal",
+          "title": "Des soins multi-promesses conçus pour chacun.",
+          "extratitle_size": "normal",
+          "content": "<p>D'un individu &agrave; un autre, les besoins de la peau varient. Ils &eacute;voluent &eacute;galement en fonction de l'&acirc;ge. Adulte confirm&eacute; ou en devenir, Alyscamps pense &agrave; vous. Parce que le monde du soin et de la beaut&eacute; concerne toute la famille, Alyscamps pense ses produits pour tous les membres qui la composent. Ainsi, la formulation de chacun d'entre eux est adapt&eacute;e aux besoins sp&eacute;cifiques de l'adulte et de l'adolescent.&nbsp;<\/p>",
+          "extratext_size": "normal",
           "banner_color_text": "#ffffff",
           "banner_color_overlay": "#222222",
           "banner_overlay_opacity": 10,
@@ -145,33 +149,85 @@
       "1498737500673": {
         "type": "slideshow",
         "blocks": {
-          "1498737500673-0": {
+          "1584102087995": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family-1_9066-min-ConvertImage.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/home_mobile_alyscamps.jpg",
-              "image_position": "bottom-center",
-              "alignment": "bottom-left",
+              "image": "",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "right",
+              "content_width": "one-half",
+              "color_style": "white",
+              "subheading": "DÈS FIN AVRIL 2020",
+              "title": "Retrouvez nos cosmétiques naturels dans notre boutique d'Arles.",
+              "text": "",
+              "cta": "Tenez-moi au courant",
+              "link": "shopify:\/\/collections\/all",
+              "cta_2": "",
+              "link_2": "",
+              "heading_size": "small",
+              "text_size": "normal",
+              "overlay_color": "#333",
+              "overlay_opacity": 30,
+              "button_size": "normal",
+              "cta_primary_btn_style": "primary",
+              "cta_secondary_btn_style": "light"
+            }
+          },
+          "1584102094746": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family_9058-2-ConvertImage.jpg",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
               "content_width": "one-half",
               "color_style": "white",
               "subheading": "",
-              "title": "Alyscamps",
-              "text": "<p>Prendre soin de soi. Et des autres. Naturellement.&nbsp;<\/p>",
-              "cta": "Nos produits",
+              "title": "\"Prendre soin de soi. Et des autres. Naturellement\"",
+              "text": "",
+              "cta": "Le Shop",
               "link": "shopify:\/\/collections\/nos-soins",
-              "cta_2": "Notre histoire",
+              "cta_2": "La Maison",
+              "link_2": "shopify:\/\/pages\/la-maison-alyscamps",
+              "heading_size": "small",
+              "text_size": "normal",
+              "overlay_color": "#333",
+              "overlay_opacity": 20,
+              "button_size": "normal",
+              "cta_primary_btn_style": "primary",
+              "cta_secondary_btn_style": "light"
+            }
+          },
+          "1498737500673-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family_Pano-ConvertImage-ConvertImage_f95194a2-6240-4abd-a5b2-34caf3c1dbb4.jpg",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "content_width": "one-half",
+              "color_style": "white",
+              "subheading": "",
+              "title": "",
+              "text": "<p>\"Prendre soin de soi. Et des autres. Naturellement.\"<\/p>",
+              "cta": "Le shop",
+              "link": "shopify:\/\/collections\/nos-soins",
+              "cta_2": "La Maison",
               "link_2": "shopify:\/\/pages\/la-maison-alyscamps",
               "heading_size": "normal",
               "text_size": "normal",
               "overlay_color": "#333333",
-              "overlay_opacity": 45,
+              "overlay_opacity": 30,
               "button_size": "normal",
-              "cta_primary_btn_style": "primary",
+              "cta_primary_btn_style": "light",
               "cta_secondary_btn_style": "primary"
             }
           }
         },
         "block_order": [
+          "1584102087995",
+          "1584102094746",
           "1498737500673-0"
         ],
         "settings": {
@@ -188,12 +244,12 @@
       "product-template": {
         "type": "product-template",
         "blocks": {
-          "1581082316148": {
+          "1581082342927": {
             "type": "product-feature",
             "settings": {
-              "title": "Un soin sensoriel",
-              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le des notes de fruits juteux gorg&eacute;s de soleil, envelopp&eacute;es par un c&oelig;ur floral frais &agrave; base de rose, de violette et d&rsquo;iris, sur un fond bois&eacute; doux, de c&egrave;dre et de figuier.<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
-              "image": "",
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -204,12 +260,12 @@
               "text_font_size": 16
             }
           },
-          "1581082342927": {
+          "1581082316148": {
             "type": "product-feature",
             "settings": {
-              "title": "Conseils d’application",
-              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
-              "image": "",
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% d'origine naturelle m&ecirc;le<\/p>\n<p>des notes de fruits gorg&eacute;s de soleil envelopp&eacute;es par un c&oelig;ur floral frais. Ainsi, s&rsquo;y trouveront une dizaine de notes comme celles provenant de la figue, de la rose, de la violette, du c&egrave;dre et de l&lsquo;iris<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Complet-pour-Lui_50mL_9361-mine.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -224,7 +280,7 @@
             "type": "product-feature",
             "settings": {
               "title": "Un packaging idéal",
-              "description": "<p>Un flacon-pompe pour favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (verre recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "description": "<p>Un flacon-pompe pour favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose et pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re).<\/p>\n<p>Laissant tr&egrave;s peu passer l&rsquo;air, il limite les contaminations bact&eacute;riennes, virales ou mycosiques.<\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile dolive).<\/p>\n<p>Enfin, le verre est recyclable &agrave; l&rsquo;infini pour une meilleure pr&eacute;servation de l&rsquo;environnement.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -243,9 +299,9 @@
               "heading_align": "left",
               "heading_font_size": 28,
               "text_font_size": 16,
-              "subheading": "",
-              "title": "Des soins adaptés aux plus sensibles.",
-              "content": "<p>L'ensemble des soins Alyscamps sont adapt&eacute;s aux peaux sensibles et fragiles. L'utilisation des soins Alyscamps en tant que soins uniques vous permet &eacute;galement d'&eacute;viter les interactions n&eacute;fastes caus&eacute;es par la superposition de plusieurs produits, allerg&egrave;nes et conservateurs.<\/p>",
+              "subheading": "POUR EN SAVOIR PLUS :",
+              "title": "",
+              "content": "<p><strong>L&rsquo;efficacit&eacute; de l&rsquo;huile d&rsquo;olive et de l&rsquo;huile d&rsquo;amande douce dans les cosm&eacute;tiques est compl&eacute;t&eacute;e par la litt&eacute;rature scientifique suivante&nbsp;:<\/strong><\/p>\n<p>- Romana Souza B. et Monte-Alto-Costa A., Olive oil inhibits ageing signs induced by chronic stress in ex vivo human skin via inhibition of extracellular-signal-related kinase 1\/2 and c-JUN pathwas, Int. J. Cosmet.Sci., 2019, 41, 156 &ndash; 163,<\/p>\n<p>-&nbsp;Viola P,&nbsp;Viola M, Virgin olive oil as a fundamental nutritional component and skin protector,&nbsp;Clin Dermatol., 2009, 27, 2, Pages 159-65<\/p>\n<p>-&nbsp;Gorini I,&nbsp;Iorio S,&nbsp;Ciliberti R,&nbsp;Licata M,&nbsp;Armocida G, Olive oil in pharmacological and cosmetic traditions,&nbsp;J Cosmet Dermatol., 2019<\/p>\n<p>- Ahmad Z, The uses and properties of almond oil, Complement Ther Clin Pract, 2010, Feb;16(1):10-2.<\/p>",
               "accent_line": "none",
               "accent_line_color": "#333",
               "cta": "",
@@ -256,8 +312,8 @@
           }
         },
         "block_order": [
-          "1581082316148",
           "1581082342927",
+          "1581082316148",
           "1582111671329",
           "1581082363439"
         ],
@@ -289,6 +345,14 @@
               "mobile_hide_block": false
             }
           },
+          "1584019502624": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Fond&eacute;e &agrave; Arles, en Provence par un docteur en pharmacie, Ayscamps offre des soins complets aux formulations naturelles, compos&eacute;s d'ingr&eacute;dients s&eacute;lectionn&eacute;s pour leur efficacit&eacute; et leur s&eacute;curit&eacute;.<\/p>",
+              "mobile_hide_block": false
+            }
+          },
           "1579531266958": {
             "type": "text",
             "settings": {
@@ -301,7 +365,7 @@
             "type": "text",
             "settings": {
               "title": "Nous contacter",
-              "text": "<p>julie@alyscamps.co<\/p>\n<p>0681596960<\/p>",
+              "text": "<p><a href=\"mailto:contact@alyscamps.co\">contact@alyscamps.co<\/a><\/p>\n<p><\/p>",
               "mobile_hide_block": true
             }
           },
@@ -316,6 +380,7 @@
         },
         "block_order": [
           "1528202806381",
+          "1584019502624",
           "1579531266958",
           "1579531471945",
           "1528202808725"
@@ -344,8 +409,8 @@
         "settings": {
           "color": "#222",
           "background": "#fff",
-          "title": "Newsletter",
-          "content": "<p>Let's keep in touch<\/p>"
+          "title": "NEWSLETTER",
+          "content": "<p>Inscrivez-vous &agrave; notre newsletter et soyez averti.e.s de nos actus produits et de nos &eacute;v&egrave;nements exclusifs.<\/p>"
         }
       },
       "product-features": {
@@ -456,6 +521,7 @@
       },
       "1532039073433": {
         "type": "image-with-text",
+        "disabled": true,
         "blocks": {
           "1532039073433-0": {
             "type": "gallery_image",
@@ -509,14 +575,15 @@
       },
       "1532039151588": {
         "type": "instagram",
+        "disabled": true,
         "settings": {
           "instaToken": "",
           "rows": 2,
-          "columns": 6,
+          "columns": 5,
           "show_featured": false,
           "title": "Instagram",
-          "cta": "Follow Us",
-          "link": "",
+          "cta": "Suivez-nous",
+          "link": "Découvrir",
           "button_style": "primary",
           "color_text": "#333333",
           "color_overlay": "#fff1ae",
@@ -658,7 +725,7 @@
           "1532039795680-2"
         ],
         "settings": {
-          "color_icons_bg": "#005844",
+          "color_icons_bg": "#85a189",
           "color_icons_text": "#ffffff"
         }
       },
@@ -732,6 +799,7 @@
       },
       "1532041725090": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "1532041725090-0": {
             "type": "image",
@@ -742,7 +810,7 @@
               "alignment": "bottom-left",
               "content_width": "one-half",
               "color_style": "white",
-              "subheading": "NOS ACTUS",
+              "subheading": "ACTU",
               "title": "Ouverture imminente !",
               "text": "<p>Fin avril, retrouvez tous nos produits dans notre boutique situ&eacute;e en plein coeur d'Arles...&nbsp;<\/p>",
               "cta": "En savoir plus...",
@@ -856,8 +924,8 @@
         "settings": {
           "color": "#222",
           "background": "#fff",
-          "title": "Newsletter",
-          "content": "<p>Inscrivez-vous &agrave; notre newletter&nbsp;<\/p>"
+          "title": "NEWSLETTER",
+          "content": "<p>Inscrivez-vous &agrave; notre newsletter et soyez averti.e.s de nos actus produits et de nos &eacute;v&egrave;nements exlusifs.<\/p>"
         }
       },
       "slideshow-histoire": {
@@ -866,7 +934,7 @@
           "1579628645534": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0055.JPG",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family_Pano-ConvertImage-ConvertImage.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -887,36 +955,10 @@
               "cta_primary_btn_style": "primary",
               "cta_secondary_btn_style": "light"
             }
-          },
-          "1581428794359": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
-              "image_mobile": "",
-              "image_position": "center-center",
-              "alignment": "center",
-              "content_width": "one-half",
-              "color_style": "white",
-              "subheading": "",
-              "title": "Welcome to Modular",
-              "text": "<p>A unique layout with a striking design<\/p>",
-              "cta": "Shop Now",
-              "link": "shopify:\/\/collections\/all",
-              "cta_2": "",
-              "link_2": "",
-              "heading_size": "large",
-              "text_size": "normal",
-              "overlay_color": "#333",
-              "overlay_opacity": 30,
-              "button_size": "normal",
-              "cta_primary_btn_style": "primary",
-              "cta_secondary_btn_style": "light"
-            }
           }
         },
         "block_order": [
-          "1579628645534",
-          "1581428794359"
+          "1579628645534"
         ],
         "settings": {
           "anchor": "histoire",
@@ -938,8 +980,8 @@
           "heading_font_size": 28,
           "text_font_size": 16,
           "subheading": "",
-          "title": "D'une expertise !",
-          "content": "<p>Celle de Julie, fondatrice d'Alyscamps et docteur en pharmacie sp&eacute;cialis&eacute;e dans la vigilance des produits de sant&eacute;.&nbsp;<\/p>\n<p>Son exp&eacute;rience en tant qu'ancien interne en pharmacie des h&ocirc;pitaux de Paris et son expertise acquise aupr&egrave;s des autorit&eacute;s de sant&eacute;, de l'industrie pharmaceutique et de sa propre soci&eacute;t&eacute; de conseil lui donnent l'ind&eacute;pendance n&eacute;c&eacute;ssaire pour fonder sa propre marque.&nbsp;<\/p>\n<p><\/p>\n<p>Julie reste fid&egrave;le &agrave; ses principes.<\/p>\n<p>Une &eacute;thique guid&eacute;e par le Serment de Galien, prononc&eacute; par tout docteur en pharmacie.<\/p>\n<p>Une ligne de conduite : se baser sur des r&eacute;sultats scientifiques pour s&eacute;lectionner des ingr&eacute;dients efficaces et s&ucirc;rs.&nbsp;<\/p>\n<p>Une donne inconditionnelle qu'elle prend particuli&egrave;rement &agrave; coeur : la transparence !&nbsp;<\/p>",
+          "title": "D'une expertise,  la mienne !",
+          "content": "<p>Moi, Julie, fondatrice d&rsquo;Alyscamps et docteure en pharmacie sp&eacute;cialis&eacute;e dans la vigilance des produits de sant&eacute;. Mon exp&eacute;rience en tant qu&rsquo;ancien interne en pharmacie des h&ocirc;pitaux de Paris et mon exp&eacute;rience acquise aupr&egrave;s des autorit&eacute;s de sant&eacute;, de l&rsquo;industrie pharmaceutique et de ma propre soci&eacute;t&eacute; de conseils me donnent l&rsquo;ind&eacute;pendance n&eacute;cessaire pour fonder ma propre marque.<\/p>\n<p>Je reste fid&egrave;le &agrave; mes principes. Une &eacute;thique guid&eacute;e par le Serment de Galien, prononc&eacute; par tout docteur en pharmacie. Une ligne de conduite&nbsp;: se baser sur des r&eacute;sultats scientifiques pour s&eacute;lectionner des ingr&eacute;dients efficaces et s&ucirc;rs. Une donne inconditionnelle que je prends particuli&egrave;rement &agrave; c&oelig;ur&nbsp;: la transparence.<\/p>",
           "accent_line": "none",
           "accent_line_color": "#333",
           "cta": "",
@@ -999,7 +1041,7 @@
             "type": "text",
             "settings": {
               "heading": "Des Alyscamps...",
-              "description": "<p>ou des Champs-Elys&eacute;es arl&eacute;siens peints par Van Gogh et Gauguin, v&eacute;ritable embl&egrave;me du patrimoine romain et architectural d'Arles, en Provence.<\/p>\n<p><\/p>\n<p>Et d'Arles, une ville inspirante dont l'activit&eacute; artistique, les traditions et l'h&eacute;ritage historique lui conf&egrave;rent une identit&eacute; unique.&nbsp;<\/p>",
+              "description": "<p>Ou des &laquo;&nbsp;Champs-Elys&eacute;es&nbsp;&raquo;, l&rsquo;un des embl&egrave;mes du patrimoine romain d&rsquo;Arles, en Provence, peints par Van Gogh et Gauguin.<\/p>\n<p>De la V&eacute;nus d&rsquo;Arles, sculpture de l&rsquo;&eacute;poque romaine repr&eacute;sentant la d&eacute;esse Aphrodite, &laquo;&nbsp;la plus belle femme du royaume&nbsp;&raquo; selon Louis XIV, aujourd&rsquo;hui au Louvre.<\/p>\n<p>Et d&rsquo;Arles elle-m&ecirc;me, une ville inspirante dont l&rsquo;activit&eacute; artistique, les traditions et l&rsquo;h&eacute;ritage historique lui conf&egrave;rent une identit&eacute; unique.<\/p>",
               "image": "shopify:\/\/shop_images\/histoire1.jpg",
               "image_link": "",
               "button_text": "",
@@ -1022,8 +1064,8 @@
           "1580830251417": {
             "type": "text",
             "settings": {
-              "heading": "D'une famille et d'une ville,",
-              "description": "<p>Le natif d'Arles, Jean-Fran&ccedil;ois,&nbsp;<\/p>\n<p>L'arl&eacute;sienne de coeur, Julie, son &eacute;pouse,<\/p>\n<p>Camille et Pierre, les enfants.<\/p>",
+              "heading": "D’une famille, la mienne,",
+              "description": "<p>Mon mari, Jean-Fran&ccedil;ois, pharmacien et natif d&rsquo;Arles, qui a toujours voulu mettre en lumi&egrave;re sa cit&eacute;, &agrave; l&rsquo;image de son grand-p&egrave;re amoureux de Van Gogh.<\/p>\n<p>Mes enfants et supporters, Camille et Pierre,<\/p>\n<p>Et moi-m&ecirc;me, pharmacienne et arl&eacute;sienne de c&oelig;ur, qui a l&rsquo;id&eacute;e un peu folle de cr&eacute;er cette marque.<\/p>",
               "image": "shopify:\/\/shop_images\/famille_alyscamps.jpg",
               "image_link": "",
               "button_text": "",
@@ -1035,7 +1077,7 @@
             "type": "text",
             "settings": {
               "heading": "D'un besoin :",
-              "description": "<p>Cr&eacute;er des cosm&eacute;tiques pour chaque membre de la famille en utilisant des ingr&eacute;dients sains, efficaces et naturels sans oublier la dimension sensorielle.<\/p>\n<p>Un moyen de r&eacute;pondre au combat familial quotidien : prendre soin d'une peau atopique, r&eacute;active... tout en prenant du plaisir !<\/p>",
+              "description": "<p>Cr&eacute;er des cosm&eacute;tiques pour chaque membre de la famille en utilisant des ingr&eacute;dients sains, efficaces et naturels sans oublier la dimension sensorielle.<\/p>\n<p>Un moyen de r&eacute;pondre &agrave; notre combat familial quotidien : prendre soin d'une peau atopique, r&eacute;active... tout en prenant du plaisir !<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -1048,7 +1090,7 @@
             "settings": {
               "heading": "De promesses :",
               "description": "<p>Une d&eacute;marche &eacute;co-responsable,<\/p>\n<p>Un engagement social,<\/p>\n<p>Une dynamique locale,<\/p>\n<p>Une fabrication made in France.<\/p>",
-              "image": "",
+              "image": "shopify:\/\/shop_images\/almond-tree-2094531-pixabay.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1100,7 +1142,7 @@
           "1581429676696": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Family_9058-2-ConvertImage.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1146,7 +1188,7 @@
             "settings": {
               "heading": "Un soin, des promesses.",
               "description": "<p>En cr&eacute;ant des soins multi-actifs \"tout-en-un\", nous veillons &agrave; limiter au maximum la surench&egrave;re de produits dans votre salle de bains, pour le bien de votre peau et de l'environnement.<\/p>\n<p>D'un seul geste, votre peau est gorg&eacute;e de tout ce dont elle a besoin, son &eacute;quilibre est pr&eacute;serv&eacute;.&nbsp;<\/p>",
-              "image": "shopify:\/\/shop_images\/DSC9147-min-ConvertImage.jpg",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Perfection_50mL_9324_2x3-min_1.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1157,7 +1199,7 @@
             "type": "text",
             "settings": {
               "heading": "La nature au coeur des soins",
-              "description": "<p>La nature proven&ccedil;ale s'invite sur votre peau et vous d&eacute;voile tous ses bienfaits.&nbsp;<\/p>\n<p>D&eacute;riv&eacute;s de l'olivier, figue, amande, tournesol, pistachier, abricot... 97% &agrave; 99% des ingr&eacute;dients s&eacute;lectionn&eacute;s sont d'origine naturelle.<\/p>\n<p>M&ecirc;me l'acide hyaluronique est d'origine v&eacute;g&eacute;tale.&nbsp;<\/p>",
+              "description": "<p>La nature proven&ccedil;ale s&rsquo;invite sur votre peau et vous d&eacute;voile tous ses bienfaits&nbsp;tels que les d&eacute;riv&eacute;s de l&rsquo;olivier, la figue, l&rsquo;amande, le tournesol, le pistachier, l&rsquo;abricot.<\/p>\n<p>97% &agrave; 99% des ingr&eacute;dients s&eacute;lectionn&eacute;s sont d&rsquo;origine naturelle.<\/p>\n<p>M&ecirc;me l&rsquo;acide hyaluronique est d&rsquo;origine v&eacute;g&eacute;tale.<\/p>",
               "image": "shopify:\/\/shop_images\/olives-253264_960_720.jpg",
               "image_link": "",
               "button_text": "",
@@ -1185,7 +1227,7 @@
           "text_font_size": 16,
           "subheading": "",
           "title": "La sécurité, notre ADN",
-          "content": "<p>Avec Alyscamps, tout ingr&eacute;dient ind&eacute;sirable ou suspect&eacute; de l'&ecirc;tre est banni.<\/p>\n<p>Nous limitons l'utilisation d'allerg&egrave;nes - nos parfums en sont quasiment d&eacute;pourvus - et restreignons l'usage des substances ayant un impact n&eacute;faste lorsqu'elles sont utilis&eacute;es en forte quantit&eacute; ou en association avec d'autres produits.<\/p>\n<p><\/p>\n<p>Plus aucun risque de croiser perturbateurs endocriniens, parabens, silicones, phenoxyethanol, parfums de synth&egrave;se, huiles min&eacute;rales, BHA, BHT, triclosan, dioxyde de titane, methylisothiazolinone (MIT), methylchloroisothiasolinone (MCIT), sodium lauryl sulfate, ammonium lauryl sulfate, colorants, benzoph&eacute;nones, nanoparticules, acide salicylique, alcool benzylique ou tout autre filtre UV toxique.<\/p>",
+          "content": "<p>Avec Alyscamps, tout ingr&eacute;dient ind&eacute;sirable ou suspect&eacute; de l&rsquo;&ecirc;tre est banni (car pourquoi prendre un risque lorsqu&rsquo;il y a un doute&nbsp;?).<\/p>\n<p>Nous limitons l&rsquo;utilisation d&rsquo;allerg&egrave;nes &ndash; nos parfums en sont quasiment d&eacute;pourvus &ndash; et restreignons l&rsquo;usage de substances ayant un impact n&eacute;faste lorsqu&rsquo;elles sont utilis&eacute;es en forte quantit&eacute; ou en association avec d&rsquo;autres produits.<\/p>\n<p>Notre charte de formulation supprime l&rsquo;utilisation de perturbateurs endocriniens, parabens, silicones, ph&eacute;noxy&eacute;thanol, BHA (ButylHydroxyAnisole), BHT (ButylHydroxyTolu&egrave;ne), triclosan, dioxyde de titane, m&eacute;thylisothiazolinine (MIT), m&eacute;thylchloroisothiasolinone (MCIT), nanoparticules, acide salicylique, alcool benzylique, benzoph&eacute;nones, huiles min&eacute;rales, parfums de synth&egrave;se, colorants, sodium lauryl sulfate, sodium laureth sulfate, ammonium lauryl sulfate et ammonium laureth sulfate.<\/p>",
           "accent_line": "none",
           "accent_line_color": "#333",
           "cta": "",
@@ -1200,9 +1242,9 @@
           "1580832292303": {
             "type": "text",
             "settings": {
-              "heading": "Des actifs hyper-actifs.",
+              "heading": "Des actifs actifs",
               "description": "<p>L'efficacit&eacute; des actifs s&eacute;lectionn&eacute;s pour la formulation des soins Alyscamps est prouv&eacute;e scientifiquement (brevets, &eacute;tudes et litt&eacute;rature scientifiques).<\/p>\n<p>Le taux de concentration des actifs utilis&eacute;s est soigneusement respect&eacute; afin de garantir leur efficacit&eacute;&nbsp;optimale.<\/p>\n<p>Ainsi, les b&eacute;n&eacute;fices sont l&agrave; en un seul geste.&nbsp;<\/p>",
-              "image": "",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Perfection_50mL_9058_2x3Diag.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1213,7 +1255,7 @@
             "type": "text",
             "settings": {
               "heading": "Des parfums uniques",
-              "description": "<p>Fabriqu&eacute;s par Robert &agrave; Grasse et cr&eacute;&eacute;s exclusivement pour Alyscamps par Mailis Richard-Royer, experte du parfum 100% naturel.<\/p>\n<p>Un univers d&eacute;licat compos&eacute; de trois signatures olfactives. On y retrouve des notes de figuier, travaill&eacute;es dans la fra&icirc;cheur de facettes fruit&eacute;es juteuses, ou agr&eacute;ment&eacute;es de notes fra&icirc;ches aromatiques et bois&eacute;es, selon les pistes recherch&eacute;es (f&eacute;minine, masculine et adolescente)<\/p>",
+              "description": "<p>Fabriqu&eacute;s par Robert&nbsp;et &agrave; Grasse et cr&eacute;&eacute;s exclusivement pour Alyscamps par Ma&iuml;lis Richard-Royer, experte du parfum 100% naturel.<\/p>\n<p>Un univers d&eacute;licat compos&eacute; de trois signatures olfactives (f&eacute;minine, masculine et adolescente).<\/p>\n<p>Les notes de figuier sont envelopp&eacute;es par un c&oelig;ur floral, dans la fra&icirc;cheur de notes aromatiques, bois&eacute;es ou fruit&eacute;es (ros&eacute;, violette, romarin, iris, myrte, bergamote, menthe poivr&eacute;e&hellip;).<\/p>",
               "image": "shopify:\/\/shop_images\/aroma-906137_1920.jpg",
               "image_link": "",
               "button_text": "",
@@ -1251,7 +1293,7 @@
           "1581433926496": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/olives-253264_960_720.jpg",
+              "image": "shopify:\/\/shop_images\/adult-1867702_1920.jpg",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1278,7 +1320,7 @@
           "1581433926496"
         ],
         "settings": {
-          "anchor": "engagements",
+          "anchor": "test",
           "showNavDots": false,
           "showNavArrows": false,
           "show_arrow_down": false,
@@ -1296,7 +1338,7 @@
             "type": "text",
             "settings": {
               "heading": "Valoriser les filières locales.",
-              "description": "<p>Nous oeuvrons pour que la majorit&eacute; de nos actifs soient issus des ressources locales (olives, figues, tournesols, riz, amandes...).<\/p>\n<p>Ainsi, largement utilis&eacute;e dans la formulation de nos soins, l'huile d'olive ne d&eacute;roge pas &agrave; ce principe.<\/p>\n<p><\/p>\n<p>Moulinier depuis 1928, le Moulin de la Cravenco dispose d'une oliveraie travers&eacute;e par l'Aqueduc Romain de Barbegal et compos&eacute;e d'oliviers de plus de 60 ans. Ses atouts majeurs ? Un savoir-faire hors pair et une qualit&eacute; ind&eacute;niable.&nbsp;<\/p>\n<p><\/p>\n<p>L'huile d'olive vierge extra s&eacute;lectionn&eacute;e est extraite &agrave; froid et biologique. Elle d&eacute;tient l'appellation d'Origine Prot&eacute;g&eacute;e de la Vall&eacute;e des Beaux-de-Provence.<\/p>",
+              "description": "<p>Nous oeuvrons pour que la majorit&eacute; de nos actifs soient issus des ressources locales (olives, figues, tournesols, riz, amandes...).<\/p>\n<p>Largement utilis&eacute;e dans la formulation de nos soins, l'huile d'olive ne d&eacute;roge pas &agrave; ce principe.<\/p>\n<p><\/p>\n<p>Moulinier depuis 1928, le Moulin de la Cravenco dispose d'une oliveraie travers&eacute;e par l'Aqueduc Romain de Barbegal et compos&eacute;e d'oliviers de plus de 60 ans. Ses atouts majeurs ? Un savoir-faire hors pair et une qualit&eacute; ind&eacute;niable.&nbsp;<\/p>\n<p><\/p>\n<p>L'huile d'olive vierge extra s&eacute;lectionn&eacute;e est extraite &agrave; froid et biologique. Elle d&eacute;tient l'Appellation d'Origine Prot&eacute;g&eacute;e de la Vall&eacute;e des Baux-de-Provence.<\/p>",
               "image": "shopify:\/\/shop_images\/Moulin_La_Cravenco.jpg",
               "image_link": "",
               "button_text": "",
@@ -1308,8 +1350,8 @@
             "type": "text",
             "settings": {
               "heading": "Fabriquer en France.",
-              "description": "<p>Une d&eacute;marche &eacute;co-responsable et locale :&nbsp;<\/p>\n<p>- viser une empreinte carbone la plus basse possible,<\/p>\n<p>- miser sur le savoir-faire des fran&ccedil;ais, les meilleurs dans le secteur du luxe et de la beaut&eacute;,&nbsp;<\/p>\n<p>- cr&eacute;er de l'emploi en privil&eacute;giant des fournisseurs fran&ccedil;ais et en faisant grandir l'&eacute;quipe !&nbsp;<\/p>",
-              "image": "",
+              "description": "<p>Une d&eacute;marche &eacute;co-responsable et locale :&nbsp;<\/p>\n<p>- viser une empreinte carbone la plus basse possible,<\/p>\n<p>- miser sur le savoir-faire fran&ccedil;ais, les meilleurs dans le secteur du luxe et de la beaut&eacute;,&nbsp;<\/p>\n<p>- cr&eacute;er de l'emploi en privil&eacute;giant des fournisseurs fran&ccedil;ais et en faisant grandir l'&eacute;quipe.<\/p>",
+              "image": "shopify:\/\/shop_images\/hands-731265_1920.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1320,8 +1362,8 @@
             "type": "text",
             "settings": {
               "heading": "Revenir à l'essentiel.",
-              "description": "<p>Faire le choix de soins multi-b&eacute;n&eacute;fices, des soins \"tout-en-un\", c'est &eacute;viter la surconsommation, l'accumulation de produits dans la salle de bains et sur la peau.<\/p>\n<p>Un seul produit suffit pour prendre soin de sa peau au quotidien.&nbsp;<\/p>",
-              "image": "",
+              "description": "<p>Faire le choix de soins multi-b&eacute;n&eacute;fices, des soins \"tout-en-un\", c'est &eacute;viter la surconsommation, l'accumulation de produits dans la salle de bains et sur la peau.<\/p>\n<p>Un seul produit suffit pour prendre soin de votre peau au quotidien.&nbsp;<\/p>",
+              "image": "shopify:\/\/shop_images\/family-hand-1636615_1920.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1332,7 +1374,7 @@
             "type": "text",
             "settings": {
               "heading": "Penser recyclable.",
-              "description": "<p>Alyscamps privil&eacute;gie les d&eacute;marches pour limiter son impact environnemental et pr&eacute;server la plan&egrave;te.<\/p>\n<p><\/p>\n<p>Les packagings utilis&eacute;s sont recyclables (verre et carton), le carton utilis&eacute; pour les &eacute;tuis est garanti FSC - z&eacute;ro d&eacute;forestation.&nbsp;<\/p>",
+              "description": "<p>Alyscamps privil&eacute;gie les d&eacute;marches pour limiter son impact environnemental et pr&eacute;server la plan&egrave;te.<\/p>\n<p>Nous essayons d&rsquo;utiliser le plus possible des packagings recyclables (verre et carton).<\/p>\n<p>Le carton utilis&eacute; pour les &eacute;tuis est certifi&eacute; FSC, garantissant que les for&ecirc;ts sont g&eacute;r&eacute;es de fa&ccedil;on responsable et durable.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -1385,7 +1427,7 @@
           "1580834304415": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0055.JPG",
+              "image": "",
               "image_mobile": "",
               "image_position": "center-center",
               "alignment": "center",
@@ -1406,36 +1448,10 @@
               "cta_primary_btn_style": "primary",
               "cta_secondary_btn_style": "light"
             }
-          },
-          "1581428835931": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carrousel4.jpg",
-              "image_mobile": "",
-              "image_position": "center-center",
-              "alignment": "center",
-              "content_width": "one-half",
-              "color_style": "white",
-              "subheading": "",
-              "title": "Welcome to Modular",
-              "text": "<p>A unique layout with a striking design<\/p>",
-              "cta": "Shop Now",
-              "link": "shopify:\/\/collections\/all",
-              "cta_2": "",
-              "link_2": "",
-              "heading_size": "large",
-              "text_size": "normal",
-              "overlay_color": "#333",
-              "overlay_opacity": 30,
-              "button_size": "normal",
-              "cta_primary_btn_style": "primary",
-              "cta_secondary_btn_style": "light"
-            }
           }
         },
         "block_order": [
-          "1580834304415",
-          "1581428835931"
+          "1580834304415"
         ],
         "settings": {
           "anchor": "boutique",
@@ -1474,19 +1490,7 @@
             "type": "text",
             "settings": {
               "heading": "",
-              "description": "<p>Imagin&eacute;e comme un espace de rencontre et d'accueil , l'am&eacute;nagement de la boutique a fait l'objet d'une longue r&eacute;flexion.&nbsp;<\/p>\n<p>Notre souhait : cr&eacute;er un lieu &agrave; l'image des soins que nous concevons.&nbsp;<\/p>",
-              "image": "",
-              "image_link": "",
-              "button_text": "",
-              "button_link": "",
-              "button_style": "primary"
-            }
-          },
-          "1580837554186": {
-            "type": "text",
-            "settings": {
-              "heading": "",
-              "description": "<p>Mat&eacute;riaux, couleurs, textures : aucun d&eacute;tail n'est laiss&eacute; au hasard. Ce petit &eacute;crin fait d'osier, de bois, de pierre et de c&eacute;ramique situ&eacute; au coeur de la ville d'Arles a &eacute;t&eacute; sp&eacute;cialement imagin&eacute; pour offrir un v&eacute;ritable moment de bien-&ecirc;tre &agrave; tous.tes ceux.lles qui en franchiront le seuil.&nbsp;<\/p>",
+              "description": "<p>Notre souhait : cr&eacute;er un lieu &agrave; l'image des soins que nous concevons. Mat&eacute;riaux, couleurs, textures : aucun d&eacute;tail n'est laiss&eacute; au hasard. Ce petit &eacute;crin fait d'osier, de bois, de pierre et de c&eacute;ramique situ&eacute; au coeur de la ville d'Arles a &eacute;t&eacute; sp&eacute;cialement imagin&eacute; pour offrir un v&eacute;ritable moment de bien-&ecirc;tre &agrave; tous.tes ceux.lles qui en franchiront le seuil.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -1496,8 +1500,7 @@
           }
         },
         "block_order": [
-          "1580837488720",
-          "1580837554186"
+          "1580837488720"
         ],
         "settings": {
           "blocks_alignment": "center",
@@ -1539,18 +1542,18 @@
               "link": ""
             }
           },
-          "1581424591114": {
+          "1582283996967": {
             "type": "anchor",
             "settings": {
-              "title": "Les engagements",
-              "anchor": "#engagements",
+              "title": "Engagements",
+              "anchor": "#test",
               "link": ""
             }
           },
-          "1581424598380": {
+          "1582286316713": {
             "type": "anchor",
             "settings": {
-              "title": "La boutique",
+              "title": "Boutique",
               "anchor": "#boutique",
               "link": ""
             }
@@ -1559,8 +1562,8 @@
         "block_order": [
           "1581424526704",
           "1581424550218",
-          "1581424591114",
-          "1581424598380"
+          "1582283996967",
+          "1582286316713"
         ],
         "settings": {
           "background-color": "#a0d1ca",
@@ -1572,26 +1575,27 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Alyscamps_Logo_bloc-Blanc.png",
-          "logo_other": "",
+          "logo": "shopify:\/\/shop_images\/Alyscamps_Logo_typo-Noir_1.png",
+          "logo_other": "shopify:\/\/shop_images\/Alyscamps_Logo_typo-Noir_1.png",
           "logo_max_width": 195,
           "show_site_name": false,
-          "show_account_icon": false,
+          "show_account_icon": true,
           "menu_list": "main-menu",
           "nav_layout": "standard",
           "links_position": "links_center",
           "logo_position": "logo_left",
-          "meganav_image": "",
-          "meganav_image_heading": "",
-          "meganav_image_link": "",
+          "meganav_image": "shopify:\/\/shop_images\/ALYSCAMPS_Family-1_9066-min-ConvertImage_e6fa3e04-308a-4837-b239-65e8036df21c.jpg",
+          "meganav_image_heading": "LA MAISON AYSCAMPS",
+          "meganav_image_link": "shopify:\/\/pages\/la-maison-alyscamps",
           "show_announcement": false,
-          "show_announcement_on_mobile": true,
-          "text": "<p>Broadcast sales, promos, or other offerings here<\/p>",
+          "show_announcement_on_mobile": false,
+          "text": "<p>Chaque commande est envoy&eacute;e accompagn&eacute;e d'un pochon en coton bio<\/p>",
           "link": ""
         }
       },
       "1581590988468": {
         "type": "product-list",
+        "disabled": true,
         "blocks": {
           "1581590988468-0": {
             "type": "product",
@@ -1671,12 +1675,12 @@
       "product-template-2": {
         "type": "product-template-2",
         "blocks": {
-          "1582202158173": {
+          "1582202200505": {
             "type": "product-feature",
             "settings": {
-              "title": "Un soin sensoriel",
-              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le une dizaine de notes comme des notes de figuier, iris, violette, rose et c&egrave;dre.<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
-              "image": "",
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1687,12 +1691,12 @@
               "text_font_size": 16
             }
           },
-          "1582202200505": {
+          "1582202158173": {
             "type": "product-feature",
             "settings": {
-              "title": "Conseils d’application",
-              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
-              "image": "",
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% d'origine naturelle m&ecirc;le une dizaine de notes comme des notes de figuier, iris, violette, rose et c&egrave;dre.<\/p>\n<p>Aucun allerg&egrave;ne n&rsquo;est &agrave; &eacute;tiqueter.<\/p>",
+              "image": "shopify:\/\/shop_images\/soins.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1707,7 +1711,7 @@
             "type": "product-feature",
             "settings": {
               "title": "Un packaging idéal",
-              "description": "<p>Un flacon-pompe pour<\/p>\n<p>favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (le verre est recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "description": "<p>Un flacon-pompe pour favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose et pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re).<\/p>\n<p>Laissant tr&egrave;s peu passer l&rsquo;air, il limite les contaminations bact&eacute;riennes, virales ou mycosiques.<\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile dolive).<\/p>\n<p>Enfin, le verre est recyclable &agrave; l&rsquo;infini pour une meilleure pr&eacute;servation de l&rsquo;environnement.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -1718,12 +1722,31 @@
               "heading_font_size": 28,
               "text_font_size": 16
             }
+          },
+          "1582281240001": {
+            "type": "rich-text",
+            "settings": {
+              "layout": "default",
+              "heading_align": "left",
+              "heading_font_size": 24,
+              "text_font_size": 14,
+              "subheading": "Pour en savoir plus :",
+              "title": "",
+              "content": "<p><strong>L&rsquo;efficacit&eacute; de l&rsquo;huile d&rsquo;olive dans les cosm&eacute;tiques est compl&eacute;t&eacute;e par la litt&eacute;rature scientifique suivante&nbsp;:<\/strong><\/p>\n<p>- Romana Souza B. et Monte-Alto-Costa A., Olive oil inhibits ageing signs induced by chronic stress in ex vivo human skin via inhibition of extracellular-signal-related kinase 1\/2 and c-JUN pathwas, Int. J. Cosmet.Sci., 2019, 41, 156 &ndash; 163,<\/p>\n<p>- Viola P,&nbsp;Viola M, Virgin olive oil as a fundamental nutritional component and skin protector,&nbsp;Clin Dermatol., 2009, 27, 2, Pages 159-65<\/p>\n<p>- Gorini I,&nbsp;Iorio S,&nbsp;Ciliberti R,&nbsp;Licata M,&nbsp;Armocida G, Olive oil in pharmacological and cosmetic traditions,&nbsp;J Cosmet Dermatol., 2019<\/p>",
+              "accent_line": "none",
+              "accent_line_color": "#333",
+              "cta": "",
+              "link": "",
+              "button_style": "primary",
+              "button_position": "left"
+            }
           }
         },
         "block_order": [
-          "1582202158173",
           "1582202200505",
-          "1582202220026"
+          "1582202158173",
+          "1582202220026",
+          "1582281240001"
         ],
         "settings": {
           "product_layout": "slideshow",
@@ -1763,12 +1786,12 @@
       "product-template-3": {
         "type": "product-template-3",
         "blocks": {
-          "1582201725384": {
+          "1582201747819": {
             "type": "product-feature",
             "settings": {
-              "title": "Un soin sensoriel",
-              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle n&rsquo;est pas collante et p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% naturel m&ecirc;le des notes de garrigue proven&ccedil;ale &agrave; la douceur suave d&rsquo;un bois de figuier. Ainsi, s&rsquo;y trouveront une dizaine de notes comme celles provenant du pin, de la menthe poivr&eacute;e, de la bergamote, de l&rsquo;iris, la myrte, la lavande ou la figue.<\/p>",
-              "image": "",
+              "title": "Conseils d’application",
+              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
+              "image": "shopify:\/\/shop_images\/DSC9166-min-ConvertImage.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1779,12 +1802,12 @@
               "text_font_size": 16
             }
           },
-          "1582201747819": {
+          "1582201725384": {
             "type": "product-feature",
             "settings": {
-              "title": "Conseils d’application",
-              "description": "<p>Pour tous types de peaux.<\/p>\n<p>Appliquer le matin et le soir, sur le visage et le cou parfaitement nettoy&eacute;s et secs.<\/p>\n<p>Avec les deux mains, lisser la peau de l&rsquo;int&eacute;rieur vers l&rsquo;ext&eacute;rieur.<\/p>\n<p>Eviter le contour des yeux.<\/p>\n<p>Test&eacute; dermatologiquement.<\/p>",
-              "image": "",
+              "title": "Un soin sensoriel",
+              "description": "<p>Le bien-&ecirc;tre&nbsp;avant tout.<\/p>\n<p>La texture est soyeuse, douce, fondante.<\/p>\n<p>A l&rsquo;application, elle p&eacute;n&egrave;tre instantan&eacute;ment.<\/p>\n<p><\/p>\n<p>La fragrance exclusive cr&eacute;&eacute;e par Ma&iuml;lis Royer-Richard, parfumeuse experte en parfum 100% d'origine naturelle m&ecirc;le des notes de garrigue proven&ccedil;ale &agrave; la douceur suave d&rsquo;un bois de figuier. Ainsi, s&rsquo;y trouveront une dizaine de notes comme celles provenant du pin, de la menthe poivr&eacute;e, de la bergamote, de l&rsquo;iris, la myrte, la lavande ou la figue.<\/p>",
+              "image": "shopify:\/\/shop_images\/ALYSCAMPS_Soin-Complet-pour-Lui_50mL_9361-mine.jpg",
               "image_link": "",
               "button_text": "",
               "button_link": "",
@@ -1799,7 +1822,7 @@
             "type": "product-feature",
             "settings": {
               "title": "Un packaging idéal",
-              "description": "<p>Un flacon-pompe pour<\/p>\n<p>favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re, ne laisse pas passer les senteurs). limiter les contaminations bact&eacute;riennes, virales ou mycosiques pr&eacute;server l&rsquo;environnement (le verre est recyclable &agrave; l&rsquo;infini)<\/p>\n<p><\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile d&rsquo;olive).<\/p>",
+              "description": "<p>Un flacon-pompe pour favoriser l&rsquo;emploi, c&rsquo;est-&agrave;-dire la prise de la juste dose et pr&eacute;server la qualit&eacute; de la formule (le verre est un mat&eacute;riau &laquo;&nbsp;neutre&nbsp;&raquo;, consid&eacute;r&eacute; comme une barri&egrave;re).<\/p>\n<p>Laissant tr&egrave;s peu passer l&rsquo;air, il limite les contaminations bact&eacute;riennes, virales ou mycosiques.<\/p>\n<p>Le laquage permet de prot&eacute;ger la cr&egrave;me des effets n&eacute;fastes de la lumi&egrave;re sur la d&eacute;gradation de certains ingr&eacute;dients (huile dolive).<\/p>\n<p>Enfin, le verre est recyclable &agrave; l&rsquo;infini pour une meilleure pr&eacute;servation de l&rsquo;environnement.<\/p>",
               "image": "",
               "image_link": "",
               "button_text": "",
@@ -1810,19 +1833,38 @@
               "heading_font_size": 28,
               "text_font_size": 16
             }
+          },
+          "1582283592041": {
+            "type": "rich-text",
+            "settings": {
+              "layout": "default",
+              "heading_align": "left",
+              "heading_font_size": 28,
+              "text_font_size": 16,
+              "subheading": "POUR EN SAVOIR PLUS :",
+              "title": "",
+              "content": "<p><strong>L&rsquo;efficacit&eacute; de l&rsquo;huile d&rsquo;olive dans les cosm&eacute;tiques est compl&eacute;t&eacute;e par la litt&eacute;rature scientifique suivante&nbsp;:<\/strong><\/p>\n<p>- Romana Souza B. et Monte-Alto-Costa A., Olive oil inhibits ageing signs induced by chronic stress in ex vivo human skin via inhibition of extracellular-signal-related kinase 1\/2 and c-JUN pathwas, Int. J. Cosmet.Sci., 2019, 41, 156 &ndash; 163,<\/p>\n<p>- Viola P,&nbsp;Viola M, Virgin olive oil as a fundamental nutritional component and skin protector,&nbsp;Clin Dermatol., 2009, 27, 2, Pages 159-65<\/p>\n<p>- Gorini I,&nbsp;Iorio S,&nbsp;Ciliberti R,&nbsp;Licata M,&nbsp;Armocida G, Olive oil in pharmacological and cosmetic traditions,&nbsp;J Cosmet Dermatol., 2019<\/p>",
+              "accent_line": "none",
+              "accent_line_color": "#333",
+              "cta": "",
+              "link": "",
+              "button_style": "primary",
+              "button_position": "left"
+            }
           }
         },
         "block_order": [
-          "1582201725384",
           "1582201747819",
-          "1582201786340"
+          "1582201725384",
+          "1582201786340",
+          "1582283592041"
         ],
         "settings": {
           "product_layout": "slideshow",
           "image_gallery": "zoom",
           "image_size": "large",
           "add_cart_position": "top",
-          "show_vendor": true,
+          "show_vendor": false,
           "show_quantity": true,
           "show_cart_bar": true,
           "show_newsletter": true,
@@ -1833,12 +1875,110 @@
           "product_slideshow_dots": false,
           "product_slideshow_arrows": false
         }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "accent_line": "curved",
+          "accent_line_color": "#333"
+        }
+      },
+      "contact-template": {
+        "type": "contact-template",
+        "blocks": {
+          "1582211002988": {
+            "type": "email",
+            "settings": {
+              "title": "Email"
+            }
+          },
+          "1582211010784": {
+            "type": "text",
+            "settings": {
+              "title": "Nom Prénom"
+            }
+          },
+          "1582211022449": {
+            "type": "body",
+            "settings": {
+              "title": "Message"
+            }
+          }
+        },
+        "block_order": [
+          "1582211002988",
+          "1582211010784",
+          "1582211022449"
+        ],
+        "settings": {
+          "show_page_title": true,
+          "banner": ""
+        }
+      },
+      "1584018927072": {
+        "type": "rich-text-boutique-2",
+        "settings": {
+          "layout": "default",
+          "heading_align": "left",
+          "heading_font_size": 24,
+          "text_font_size": 16,
+          "subheading": "LE MOT DE LA FONDATRICE",
+          "title": "ALYSCAMPS EST UNE MAISON FRANÇAISE DE COSMÉTIQUES PUISANT SES ORIGINES À ARLES.",
+          "content": "<p>\"C'est une histoire de famille, notamment celle de ma fille adolescente &agrave; la peau r&eacute;active ou atopique qui peine &agrave; trouver des cosm&eacute;tiques efficaces, sensoriels et sains.<\/p>\n<p>C'est une histoire d'engagements et de valeurs : oeuvrer pour le d&eacute;veloppement de cosm&eacute;tiques naturels, multi-b&eacute;n&eacute;fices et &eacute;co-responsables.<\/p>\n<p>C'est aussi une affaire de coeur, n&eacute;e d'une profonde envie de cr&eacute;er des soins pour tous : ma famille, mes proches, et vous, hommes, femmes et adolescents.\"&nbsp;<\/p>\n<p>Julie, la fondatrice.<\/p>",
+          "accent_line": "none",
+          "accent_line_color": "#000000",
+          "cta": "Découvrir",
+          "link": "shopify:\/\/pages\/la-maison-alyscamps",
+          "button_style": "light",
+          "button_position": "right"
+        }
+      },
+      "1584097260828": {
+        "type": "instafeed",
+        "settings": {
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": "<!-- -->"
+        }
+      },
+      "1584354436314": {
+        "type": "image-with-text",
+        "blocks": {
+          "1584354436314-0": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/lucas-miguel-UY7R1QhCJ3c-unsplash-min-ConvertImage.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1584354436314-0"
+        ],
+        "settings": {
+          "showNavDots": true,
+          "showNavArrows": false,
+          "transition": "slide",
+          "autoplay": false,
+          "duration": 4,
+          "color_style": "black",
+          "show_margins": true,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s35|med_s25",
+          "subheading": "ACTU",
+          "title": "OUVERTURE IMMINENTE !",
+          "content": "<p>Fin avril, retrouvez tous nos produits dans notre boutique en plein coeur d'Arles...<\/p>",
+          "cta": "En savoir plus",
+          "link": "shopify:\/\/pages\/la-maison-alyscamps",
+          "button_style": "primary"
+        }
       }
     },
     "content_for_index": [
       "1498737500673",
-      "1532039073433",
+      "1584018927072",
       "1532039018217",
+      "1532039073433",
       "1532039795680",
       "1532041611167",
       "1581590988468",
@@ -1846,6 +1986,8 @@
       "1532041814513",
       "1532041802273",
       "1532039151588",
+      "1584354436314",
+      "1584097260828",
       "1579531077329"
     ]
   },

@@ -3385,7 +3385,7 @@ jQuery( function ($) {
 										}
 									}),
 									$popover = $('#CartPopoverCont'), // same popover container used to show succesful cart/add.js
-									error_details = "translation missing: fr.products.form.submit_error_details", // translation string
+									error_details = "Désolé, il semblerait que nous n\u0026#39;ayons pas assez de stocks pour ce produit. S\u0026#39;il vous plait, essayer d\u0026#39;en ajouter moins à votre panier. ", // translation string
 									tag = new RegExp('\[\[i\]\]'), // checks for [[i]]
 									error = error_details; // set error to just default to error_details
 
@@ -3501,8 +3501,8 @@ jQuery( function ($) {
 			if (cart.item_count === 0) {
 				$cart.append('<div class="cart-title cart-title--empty">\
 								<h2>Panier</h2>\
-								<p>' + "translation missing: fr.cart.labels.empty_cart" + '</p>\
-								<a tabindex="-1" class="js-continueShopping js-continueShopping--empty js-go-back button">translation missing: fr.cart.labels.continue_shopping</a>\
+								<p>' + "Votre panier est vide" + '</p>\
+								<a tabindex="-1" class="js-continueShopping js-continueShopping--empty js-go-back button">Continuer mes achats</a>\
 							</div>');
 
 				// Update cart total
@@ -4408,7 +4408,7 @@ jQuery( function ($) {
 	Popup.init();
 	Search.init();
 
-
+	
 
 	if ( $('.template-product').length ) {
 		Product.init();
@@ -5660,7 +5660,7 @@ var Insta = {
 										<div class="instagram-img__overlay">\
 											<div class="instagram-img__content">\
 												<div class="instagram__logo"><span class="icon-instagram"></span></div>\
-												<p class="instagram-img__likes">%%likes%% </p>\
+												<p class="instagram-img__likes">%%likes%% likes</p>\
 												<p class="instagram-img__date">%%date%%</p>\
 												<p class="instagram-img__caption">%%caption%%</p>\
 											</div>\
@@ -6239,7 +6239,7 @@ var Search = {
 					if (sold_out) {
 						flag += "Épuisé";
 					} else if (on_sale) {
-						flag += "translation missing: fr.products.labels.on_sale";
+						flag += "Vendu";
 					} else if (on_sale && sold_out) {
 						flag += "Épuisé";
 					}
@@ -6318,7 +6318,7 @@ var Addresses = {
 	    });
 
 	    // Setup province selector on each customer address
-
+	    
 
 	    // Modified contents of customer_area.js (global asset)
 	    Shopify.CustomerAddress = {
@@ -6388,3 +6388,36 @@ MobileZoom = {
 		}, 300);
 	}
 }
+
+///////// Custom Js //////////
+
+/// Anchor menu ///
+
+ var scrollTo = function(anchor){
+	console.log('new anchor');
+	if(!$(anchor) || !$(anchor).offset()) return;
+	$('html, body').stop().animate({
+		 scrollTop: $(anchor).offset().top - $('#shopify-section-header').height()
+	 }, 1000);
+}
+
+$('.scroll-to').each(function(){
+   $(this).click(function(){
+	   var anchor = $(this).attr('data-anchor');
+	   scrollTo(anchor);
+   })
+})
+
+
+
+/// smooth scroll ///
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
